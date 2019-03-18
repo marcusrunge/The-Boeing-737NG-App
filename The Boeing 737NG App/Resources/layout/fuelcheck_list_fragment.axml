@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="12dp">
+    <LinearLayout
+        android:layout_marginTop="?android:attr/actionBarSize"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <GridLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fuelcheckListGridLayout"
+            android:columnCount="3"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/blueGrey600"
+            android:layout_gravity="fill_horizontal">
+            <TextView
+                android:background="@xml/row_list_divider"
+                android:text="No"
+                android:layout_height="wrap_content"
+                android:id="@+id/fuelcheckNumberTitleTextView"
+                android:layout_column="0"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:layout_width="56dp"
+                android:paddingLeft="4dp" />
+            <TextView
+                android:background="@xml/row_list_divider"
+                android:text="Time"
+                android:layout_height="wrap_content"
+                android:id="@+id/fuelcheckTimeTitleTextView"
+                android:layout_column="1"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:paddingLeft="4dp"
+                android:layout_width="wrap_content"
+                android:layout_gravity="fill" />
+            <TextView
+                android:background="@xml/row_end_list_divider"
+                android:text="ΔFuel"
+                android:layout_height="wrap_content"
+                android:id="@+id/fuelcheckDeltafuelTitleTextView"
+                android:layout_column="2"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:layout_width="96dp"
+                android:paddingLeft="4dp"
+                android:gravity="center_horizontal" />
+        </GridLayout>
+        <android.support.v7.widget.RecyclerView
+            android:layout_weight="1"
+            android:background="@color/blueGrey600"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fuelchecksRecyclerView"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="12dp" />
+        <Toolbar
+            android:id="@+id/fuelcheckListToolbar"
+            android:theme="@android:style/ThemeOverlay.Material.Dark.ActionBar"
+            android:minHeight="?android:attr/actionBarSize"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@color/blueGrey800" />
+    </LinearLayout>
+</LinearLayout>

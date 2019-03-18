@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:fillViewport="true"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blueGrey600">
+                <TableRow>
+                    <TextView
+                        android:text="Condition:"
+                        android:layout_column="0"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="Airspeed or Mach indications are suspected to be unreliable. (Items which might indicate unreliable airspeed are listed in the Additional Information section.)"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Objective:"
+                        android:layout_column="0"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="To identify a reliable airspeed indication, if possible, or to continue the flight using the Flight With Unreliable Airspeed table in the Performance Inflight chapter."
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="1"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Autopilot (if enganged)"
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="Disengage"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="2"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Autothrottle (if enganged)"
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="Disengage"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="3"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="F/D switches (both)"
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="OFF"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_marginTop="24dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:text="4"
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="Set the following gear up pitch attitude and thrust:"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </TableRow>
+                <TableRow>
+                    <TableLayout
+                        android:layout_column="1"
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <TableRow>
+                            <TextView
+                                
+                                
+                                android:textSize="18dp"
+                                android:layout_width="wrap_content"
+                                android:layout_column="1"
+                                android:text="Flaps extended" />
+                            <TextView
+                                
+                                
+                                android:layout_column="2"
+                                android:background="@xml/dotted_line"
+                                android:layout_width="fill_parent"
+                                android:layout_weight="1" />
+                            <TextView
+                                
+                                
+                                android:text="10° and 80% N1"
+                                android:textSize="18dp"
+                                android:layout_width="wrap_content"
+                                android:layout_column="3" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="fill_parent">
+                            <TextView
+                                
+                                
+                                android:text="Flaps up"
+                                android:textSize="18dp"
+                                android:layout_column="1"
+                                android:layout_width="wrap_content" />
+                            <TextView
+                                
+                                
+                                android:layout_column="2"
+                                android:background="@xml/dotted_line"
+                                android:layout_width="fill_parent"
+                                android:layout_weight="1" />
+                            <TextView
+                                
+                                
+                                android:text="4° and 75% N1"
+                                android:textSize="18dp"
+                                android:layout_width="wrap_content"
+                                android:layout_column="3" />
+                        </TableRow>
+                    </TableLayout>
+                </TableRow>
+            </TableLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@xml/dashed_line" />
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="5"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="PROBE HEAT switches"
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="Disengage"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_marginTop="24dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:text="6"
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="The following are reliable:"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </TableRow>
+                <TableRow>
+                    <TableLayout
+                        android:layout_column="1"
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <TableRow>
+                            <TextView
+                                
+                                
+                                android:textSize="18dp"
+                                android:layout_width="wrap_content"
+                                android:layout_column="1"
+                                android:text="Attitude" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="fill_parent">
+                            <TextView
+                                
+                                
+                                android:text="N1"
+                                android:textSize="18dp"
+                                android:layout_column="1"
+                                android:layout_width="wrap_content" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="fill_parent">
+                            <TextView
+                                
+                                
+                                android:text="Ground speed"
+                                android:textSize="18dp"
+                                android:layout_column="1"
+                                android:layout_width="wrap_content" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="fill_parent">
+                            <TextView
+                                
+                                
+                                android:text="Radio altitude"
+                                android:textSize="18dp"
+                                android:layout_column="1"
+                                android:layout_width="wrap_content" />
+                        </TableRow>
+                    </TableLayout>
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_marginTop="24dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blueGrey600">
+                <TableRow>
+                    <TextView
+                        android:text="Note:"
+                        android:layout_column="0"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="Stick shaker, overspeed warning and AIRSPEED LOW (as installed) alerts may sound erroneously or simultaneously."
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Note:"
+                        android:layout_column="0"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="The Flight Path Vector and Pitch Limit Indicator may be unreliable."
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="7"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Refer to the Flight With Unreliable Airspeed table in the Performance Inflight chapter and set the pitch attitude and thrust setting for the current airplane configuration and phase of flight."
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="8"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="When in trim and stabilized, cross check the captain, first officer and standby airspeed indicators. An airspeed indication that differs by more than 20 knots or 0.03 Mach from the airspeed shown in the table should be considered unreliable."
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_marginTop="24dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:text="9"
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="Choose one:"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                <TableRow>
+                    <TableLayout
+                        android:layout_column="1"
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <TableRow>
+                            <TextView
+                                
+                                
+                                android:layout_column="0"
+                                android:text="◆"
+                                android:textSize="18dp" />
+                            <TextView
+                                
+                                
+                                android:text="Reliable airspeed indication can be determined:"
+                                android:textSize="18dp"
+                                android:layout_width="240dp" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="fill_parent">
+                            <TextView
+                                
+                                
+                                android:text="Use the most reliable airspeed source for the remainder of the flight."
+                                android:textSize="18dp"
+                                android:layout_column="1"
+                                android:layout_width="240dp"
+                                android:layout_marginLeft="24dp" />
+                        </TableRow>
+                        <TableRow
+                            android:minWidth="25px"
+                            android:minHeight="25px">
+                            <TextView
+                                
+                                
+                                android:layout_column="1"
+                                android:text="▶▶ Go to step 10"
+                                android:textSize="18dp"
+                                android:layout_marginLeft="24dp" />
+                        </TableRow>
+                    </TableLayout>
+                </TableRow>
+                <TableRow>
+                    <TableLayout
+                        android:layout_column="1"
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <TableRow>
+                            <TextView
+                                
+                                
+                                android:layout_column="0"
+                                android:text="◆"
+                                android:textSize="18dp" />
+                            <TextView
+                                
+                                
+                                android:text="Reliable airspeed indication can not be determined:"
+                                android:textSize="18dp"
+                                android:layout_width="248dp" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="fill_parent">
+                            <TextView
+                                
+                                
+                                android:text="▶▶ Go to step 12"
+                                android:textSize="18dp"
+                                android:layout_column="1"
+                                android:layout_width="248dp"
+                                android:layout_marginLeft="24dp" />
+                        </TableRow>
+                    </TableLayout>
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="10"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Flight director switch (reliable side)"
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="172dp" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="ON"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom"
+                        android:layout_width="wrap_content" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="11"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Autopilot (reliable side)"
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="108dp" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="Engage"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom"
+                        android:layout_width="wrap_content" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blueGrey600">
+                <TableRow>
+                    <TextView
+                        android:text="Note:"
+                        android:layout_column="0"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="Do not re-engage the autothrottle."
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                </TableRow>
+            </TableLayout>
+            <TextView
+                android:layout_column="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ ■ ■ ■"
+                android:textSize="18dp"
+                android:layout_gravity="center_horizontal" />
+            <TableLayout
+                android:layout_marginTop="24dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:text="12"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Set pitch attitude and thrust from the Flight With Unreliable Airspeed table in the Performance Inflight chapter for the airplane configuration and phase of flight, as needed."
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blueGrey600">
+                <TableRow>
+                    <TextView
+                        android:text="Note:"
+                        android:layout_column="0"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="Maintain visual conditions if possible."
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Establish landing configuration early."
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Radio altitude reference is available below 2,500 feet."
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Use electronic and visual glideslope indicators, where available, for approach and landing."
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                </TableRow>
+            </TableLayout>
+            <TextView
+                android:layout_column="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ ■ ■ ■"
+                android:textSize="18dp"
+                android:layout_gravity="center_horizontal" />
+            <LinearLayout
+                android:layout_marginTop="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Additional Information"
+                    android:textSize="18dp"
+                    android:layout_gravity="center_horizontal" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="One or more of the following may be evidence of unreliable airspeed or Mach indications:"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Speed/altitude information not consistent with pitch attitude and thrust setting"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• SPD failure flag"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• SPD LIM failure flag"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• IAS DISAGREE alert"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Blank or fluctuating airspeed display"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Variation between captain and first officer airspeed displays"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Radome damage or loss"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Overspeed warning"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Simultaneous overspeed and stall warnings."
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

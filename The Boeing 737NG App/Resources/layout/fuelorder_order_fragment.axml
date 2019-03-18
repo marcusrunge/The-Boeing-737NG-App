@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:theme="@style/Theme.BoeingTheme"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_marginTop="?android:attr/actionBarSize"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fuelOrderScrollView">
+        <RelativeLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fuelOrderRelativeLayout">
+            <GridLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fuelOrderGridLayout"
+                android:layout_centerHorizontal="true"
+                android:columnCount="2"
+                android:rowCount="8">
+                <TextView
+                    android:text="Flight No ▶"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="right"
+                    android:textSize="18dp"
+                    android:layout_marginRight="6dp" />
+                <EditText
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_row="0"
+                    android:layout_columnWeight="1"
+                    android:id="@+id/flightNumberEditText"
+                    android:textSize="22dp"
+                    android:gravity="center"
+                    android:layout_gravity="fill_horizontal"
+                    android:inputType="textCapCharacters" />
+                <TextView
+                    android:text="Date ▶"
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="right"
+                    android:textSize="18dp"
+                    android:layout_marginRight="6dp" />
+                <TextView
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_row="1"
+                    android:id="@+id/departureDateTextView"
+                    android:textSize="22dp"
+                    android:gravity="center"
+                    android:background="@xml/border"
+                    android:hapticFeedbackEnabled="true" />
+                <TextView
+                    android:text="Departure ▶"
+                    android:layout_column="0"
+                    android:layout_row="2"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="right"
+                    android:textSize="18dp"
+                    android:layout_marginRight="6dp" />
+                <EditText
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_row="2"
+                    android:layout_columnWeight="1"
+                    android:id="@+id/departureEditText"
+                    android:textSize="22dp"
+                    android:gravity="center"
+                    android:layout_gravity="fill_horizontal"
+                    android:inputType="textCapCharacters" />
+                <TextView
+                    android:text="Destination ▶"
+                    android:layout_column="0"
+                    android:layout_row="3"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="right"
+                    android:textSize="18dp"
+                    android:layout_marginRight="6dp" />
+                <EditText
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_row="3"
+                    android:layout_columnWeight="1"
+                    android:id="@+id/destinationEditText"
+                    android:textSize="22dp"
+                    android:gravity="center"
+                    android:layout_gravity="fill_horizontal"
+                    android:inputType="textCapCharacters" />
+                <TextView
+                    android:text="Registration ▶"
+                    android:layout_column="0"
+                    android:layout_row="4"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="right"
+                    android:textSize="18dp"
+                    android:layout_marginRight="6dp" />
+                <EditText
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_row="4"
+                    android:layout_columnWeight="1"
+                    android:id="@+id/registrationEditText"
+                    android:textSize="22dp"
+                    android:gravity="center"
+                    android:layout_gravity="fill_horizontal"
+                    android:inputType="textCapCharacters" />
+                <TextView
+                    android:text="Aircraft ▶"
+                    android:layout_column="0"
+                    android:layout_row="5"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="right|center_vertical"
+                    android:textSize="18dp"
+                    android:layout_marginRight="6dp"
+                    android:textAlignment="textEnd" />
+                <RelativeLayout
+                    android:id="@+id/aircraftRelativeLayout"
+                    android:layout_column="1"
+                    android:layout_row="5"
+                    android:minWidth="25px"
+                    android:minHeight="25px">
+                    <TextView
+                        android:id="@+id/b737TextView"
+                        android:text="B737-"
+                        android:textSize="18dp"
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true" />
+                    <EditText
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/aircraftEditText"
+                        android:textSize="22dp"
+                        android:gravity="left"
+                        android:layout_toRightOf="@+id/b737TextView"
+                        android:inputType="number" />
+                </RelativeLayout>
+                <TextView
+                    android:text="Stand / Gate ▶"
+                    android:layout_column="0"
+                    android:layout_row="6"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="right"
+                    android:textSize="18dp"
+                    android:layout_marginRight="6dp" />
+                <EditText
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_row="6"
+                    android:layout_columnWeight="1"
+                    android:id="@+id/standOrGateEditText"
+                    android:textSize="22dp"
+                    android:gravity="center"
+                    android:layout_gravity="fill_horizontal"
+                    android:inputType="textCapCharacters" />
+                <TextView
+                    android:text="Captain's Name ▶"
+                    android:layout_column="0"
+                    android:layout_row="7"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="right"
+                    android:textSize="18dp"
+                    android:layout_marginRight="6dp" />
+                <EditText
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_row="7"
+                    android:layout_columnWeight="1"
+                    android:id="@+id/captainEditText"
+                    android:textSize="22dp"
+                    android:gravity="center"
+                    android:layout_gravity="fill_horizontal" />
+            </GridLayout>
+            <RelativeLayout
+                android:layout_below="@+id/fuelOrderGridLayout"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/fuelOrderButtonsRelativeLayout"
+                android:gravity="center_horizontal">
+                <Button
+                    android:text="CLEAR"
+                    android:layout_width="52dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/clearFuelOrderButton"
+                    android:background="@color/redA700"
+                    android:layout_marginTop="12dp"
+                    android:drawableTop="@drawable/ic_stat_clear"
+                    android:textColor="@android:color/white"
+                    android:layout_marginRight="6dp"
+                    android:hapticFeedbackEnabled="true" />
+                <Button
+                    android:text="SEND"
+                    android:layout_width="52dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sendFuelOrderButton"
+                    android:background="@color/blueGrey400"
+                    android:layout_marginTop="12dp"
+                    android:drawableTop="@drawable/ic_stat_send"
+                    android:textColor="@android:color/white"
+                    android:layout_toRightOf="@+id/clearFuelOrderButton"
+                    android:layout_marginLeft="6dp"
+                    android:hapticFeedbackEnabled="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:fillViewport="true"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="All recoveries from approach to stall should be done as if an actual stall has occurred."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp" />
+            <TableLayout
+                android:layout_marginTop="24dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blueGrey600">
+                <TableRow>
+                    <TextView
+                        android:text="Note:"
+                        android:layout_column="0"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="Do not use flight director commands during the recovery."
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                </TableRow>
+            </TableLayout>
+          <LinearLayout
+            android:gravity="center"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blueGrey100">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="0.5dp">
+                    <TextView
+                        android:text="Pilot Flying"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_gravity="center_horizontal" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginLeft="0.5dp"
+                    android:layout_marginTop="1dp">
+                    <TextView
+                        android:text="Pilot Monitoring"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_gravity="center_horizontal" />
+                </LinearLayout>
+            </LinearLayout>
+          <LinearLayout
+            android:gravity="center"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blueGrey100">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="0.5dp">
+                    <TextView
+                        android:text="• Initiate the recovery:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="3dp" />
+                    <TextView
+                        android:text="• Hold the control column firmly."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp" />
+                    <TextView
+                        android:text="• Disconnect autopilot and autothrottle."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp" />
+                    <TextView
+                        android:text="• Smoothly apply nose down elevator to reduce the angle of attack until buffet or stick shaker stops. Nose down stabilizer trim may be needed."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginLeft="0.5dp"
+                    android:layout_marginTop="1dp">
+                    <TextView
+                        android:text="• Monitor altitude and airspeed."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="3dp" />
+                    <TextView
+                        android:text="• Verify all required actions have been done and call out any omissions."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="3dp" />
+                    <TextView
+                        android:text="• Call out any trend toward terrain contact."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="3dp" />
+                </LinearLayout>
+            </LinearLayout>
+          <LinearLayout
+            android:gravity="center"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blueGrey100">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="0.5dp">
+                    <TextView
+                        android:text="• Continue the recovery:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="3dp" />
+                    <TextView
+                        android:text="• Roll in the shortest direction to wings level if needed."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp" />
+                    <TextView
+                        android:text="• Advance thrust levers as needed."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp" />
+                    <TextView
+                        android:text="• Retract the speedbrakes."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp" />
+                    <TextView
+                        android:text="• Do not change gear or flap configuration, except"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp" />
+                    <TextView
+                        android:text="• During liftoff, if flaps are up, call for flaps 1."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="27dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginLeft="0.5dp"
+                    android:layout_marginTop="1dp">
+                    <TextView
+                        android:text="• Monitor altitude and airspeed."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="3dp" />
+                    <TextView
+                        android:text="• Verify all required actions have been done and call out any omissions."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="3dp" />
+                    <TextView
+                        android:text="• Call out any trend toward terrain contact."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="3dp" />
+                    <TextView
+                        android:text="• Set the FLAP lever as directed."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="3dp" />
+                </LinearLayout>
+            </LinearLayout>
+          <LinearLayout
+            android:gravity="center"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blueGrey100">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="0.5dp"
+                    android:layout_marginBottom="1dp">
+                    <TextView
+                        android:text="• Complete the recovery:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="3dp" />
+                    <TextView
+                        android:text="• Check airspeed and adjust thrust as needed."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp" />
+                    <TextView
+                        android:text="• Establish pitch attitude."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp" />
+                    <TextView
+                        android:text="• Return to the desired flight path."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp" />
+                    <TextView
+                        android:text="• Re-engage the autopilot and autothrottle if desired."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="3dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginLeft="0.5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp">
+                    <TextView
+                        android:text="• Monitor altitude and airspeed."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="3dp" />
+                    <TextView
+                        android:text="• Verify all required actions have been done and call out any omissions."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="3dp" />
+                    <TextView
+                        android:text="• Call out any trend toward terrain contact."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="3dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <TableLayout
+                android:layout_marginTop="24dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#BFFFCF00">
+                <TableRow>
+                    <TextView
+                        android:text="WARNING:"
+                        android:layout_column="0"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="If the control column does not provide the needed response, stabilizer trim may be necessary. Excessive use of pitch trim may aggravate the condition, or may result in loss of control or in high structural loads."
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="WARNING:"
+                        android:layout_column="0"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="Excessive use of pitch trim or rudder may aggravate the condition, or may result in loss of control or in high structural loads."
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

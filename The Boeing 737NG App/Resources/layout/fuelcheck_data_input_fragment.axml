@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <ScrollView
+        android:layout_marginTop="?android:attr/actionBarSize"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fuelcheckInputScrollView">
+        <GridLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fuelcheckInputGridLayout"
+            android:columnCount="2"
+            android:rowCount="4"
+            android:layout_gravity="center_horizontal">
+            <FrameLayout
+                android:layout_column="0"
+                android:layout_row="0"
+                android:background="@color/blueGrey600"
+                android:layout_gravity="fill">
+                <RelativeLayout
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:id="@+id/blockFuelRelativeLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal">
+                    <TextView
+                        android:text="▼ Block Fuel ▼"
+                        android:textSize="18dp"
+                        android:layout_width="152dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/blockFuelTextView"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center" />
+                    <EditText
+                        android:layout_width="152dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/blockFuelEditText"
+                        android:textSize="22dp"
+                        android:inputType="number"
+                        android:gravity="center"
+                        android:layout_below="@+id/blockFuelTextView"
+                        android:layout_centerHorizontal="true"
+                        android:maxLength="5" />
+                </RelativeLayout>
+            </FrameLayout>
+            <Button
+                android:text="CLEAR"
+                android:layout_width="52dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/clearBlockFuelButton"
+                android:drawableTop="@drawable/ic_stat_clear"
+                android:textColor="@android:color/white"
+                android:background="@color/redA700"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:layout_gravity="fill_vertical"
+                android:hapticFeedbackEnabled="true"
+                android:layout_marginLeft="12dp" />
+            <LinearLayout
+                android:layout_column="0"
+                android:layout_row="1"
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/engineFuelLinearLayout"
+                android:layout_marginTop="12dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/blueGrey500">
+                <TextView
+                    android:text="Used Fuel from"
+                    android:textSize="18dp"
+                    android:layout_width="196dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/usedFuelFromTextView"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal" />
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/enginesGridLayout"
+                    android:columnCount="2"
+                    android:rowCount="2"
+                    android:layout_gravity="center_horizontal">
+                    <TextView
+                        android:text="▼ Left Engine ▼"
+                        android:layout_width="128dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/leftEngineTextView"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:layout_column="0"
+                        android:layout_row="0" />
+                    <EditText
+                        android:layout_width="128dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/leftEngineFuelEditText"
+                        android:textSize="22dp"
+                        android:inputType="number"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_column="0"
+                        android:layout_row="1"
+                        android:maxLength="4" />
+                    <TextView
+                        android:text="▼ Right Engine ▼"
+                        android:layout_width="128dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rightEngineTextView"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:layout_column="1"
+                        android:layout_row="0" />
+                    <EditText
+                        android:layout_width="128dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rightEngineFuelEditText"
+                        android:textSize="22dp"
+                        android:inputType="number"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_column="1"
+                        android:layout_row="1"
+                        android:maxLength="4" />
+                </GridLayout>
+                <RelativeLayout
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:id="@+id/remainingFuelCheckRelativeLayout"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="12dp">
+                    <TextView
+                        android:text="▼ Remaining Fuel ▼"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/remainingFuelCheckTextView"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center" />
+                    <EditText
+                        android:layout_width="152dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/remainingFuelCheckEditText"
+                        android:textSize="22dp"
+                        android:inputType="number"
+                        android:gravity="center"
+                        android:layout_below="@+id/remainingFuelCheckTextView"
+                        android:layout_centerHorizontal="true"
+                        android:maxLength="5" />
+                </RelativeLayout>
+            </LinearLayout>
+            <Button
+                android:text="CLEAR"
+                android:layout_width="52dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/clearUsedRemainingFuelButton"
+                android:textColor="@android:color/white"
+                android:background="@color/redA700"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:layout_gravity="fill_vertical"
+                android:layout_marginTop="12dp"
+                android:hapticFeedbackEnabled="true"
+                android:layout_marginLeft="12dp"
+                android:drawableBottom="@drawable/ic_stat_clear"
+                android:drawableTop="@drawable/ic_stat_clear" />
+            <RelativeLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="2"
+                android:id="@+id/fuelDifferenceRelativeLayout"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp">
+                <TextView
+                    android:text="▼ Fuel Difference ▼"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fuelDifferenceTextView"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center" />
+                <TextView
+                    android:layout_below="@+id/fuelDifferenceTextView"
+                    android:text="----"
+                    android:textSize="22dp"
+                    android:layout_width="196dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fuelAmountDifferenceTextView"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:background="@xml/border" />
+            </RelativeLayout>
+        </GridLayout>
+    </ScrollView>
+    <TextView
+        android:text="The difference between block and remaining plus used fuel is the amount which has left the tanks but never reached or consumed by the engine."
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/fuelAmountDifferenceTextView"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="#FFFF9900"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center_horizontal" />
+    <FrameLayout
+        android:id="@+id/fuelcheckFrameLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <Toolbar
+            android:id="@+id/fuelcheckToolbar"
+            android:theme="@android:style/ThemeOverlay.Material.Dark.ActionBar"
+            android:minHeight="?android:attr/actionBarSize"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:background="@color/blueGrey800" />
+    </FrameLayout>
+</LinearLayout>

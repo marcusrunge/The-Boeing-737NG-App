@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">The Boeing 737NG App</string>
+  <string name="drawer_open">Open</string>
+  <string name="drawer_close">Close</string>
+  <string name="menu_refresh">Refresh</string>
+
+  <string name="fuel_order_title">Fuel Order</string>
+  <string name="fuel_check_title">Fuel Check</string>
+  <string name="baggage_distribution_title">Baggage Distribution</string>
+  <string name="brake_cooling_title">Brake Cooling</string>
+  <string name="circuit_breaker_title">Circuit Breaker</string>
+  <string name="checklists_title">Checklists</string>
+  <string name="manouvers_title">Manouvers</string>
+  <string name="limitations_title">Limitations</string>
+  <string name="settings_title">Settings</string>
+</resources>

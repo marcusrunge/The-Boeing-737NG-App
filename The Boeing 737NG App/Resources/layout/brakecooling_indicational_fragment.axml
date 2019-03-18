@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/indicationalBrakeCoolingLinearLayout"
+        android:layout_marginTop="?android:attr/actionBarSize"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp">
+        <GridLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/indicationalBrakeCoolingGridLayout"
+            android:columnCount="2"
+            android:rowCount="1"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:layout_row="0"
+                android:layout_column="0"
+                android:text="Brake Temperature Value:"
+                android:id="@+id/brakeTemperatureValueTextView"
+                android:textSize="18dp"
+                android:layout_gravity="right" />
+            <EditText
+                android:layout_row="0"
+                android:layout_column="1"
+                android:id="@+id/brakeTemperatureValueEditText"
+                android:gravity="center"
+                android:layout_width="96dp"
+                android:inputType="numberDecimal"
+                android:maxLength="4" />
+        </GridLayout>
+        <android.support.v7.widget.SwitchCompat xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/indicationalBrakeTypeSwitch"
+            android:textOn="Carbon"
+            android:text="Brake Type"
+            android:textOff="Steel"
+            android:showText="true"
+            android:textSize="18dp"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/blueGrey100"
+            android:theme="@style/BrakeTypeSwitchTheme"
+            app:showText="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+        <android.support.v7.widget.SwitchCompat xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/indicationalInFlightSwitch"
+            android:textOn="Flight"
+            android:text="Gear Down"
+            android:textOff="Ground"
+            android:showText="true"
+            android:textSize="18dp"
+            android:textColor="@color/blueGrey100"
+            android:theme="@style/InFlightSwitchTheme"
+            app:showText="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp" />
+        <TextView
+            android:text="Cooling Time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/indicationalBrakeCoolingTimeTextView"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:background="@xml/border" />
+        <Button
+            android:text="CLEAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/indicationalClearBrakeCoolingButton"
+            android:textColor="@android:color/white"
+            android:background="@color/redA700"
+            android:drawableLeft="@drawable/ic_stat_clear"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp" />
+    </LinearLayout>
+</LinearLayout>

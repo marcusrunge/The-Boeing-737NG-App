@@ -1,0 +1,1805 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:fillViewport="true"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blueGrey600">
+                <TableRow>
+                    <TextView
+                        android:text="Condition:"
+                        android:layout_column="0"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="Both of these occur:"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_column="0" />
+                    <TextView
+                        android:text="• Both engines have a loss of thrust"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_column="0" />
+                    <TextView
+                        android:text="• Both ENG FAIL alerts show."
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Objective:"
+                        android:layout_column="0"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="To restart at least one engine."
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="1"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="ENGINE START switches (both)"
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="FLT"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="2"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Engine start levers (both)"
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="CUTOFF"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_marginTop="24dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:text="3"
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="When EGT decreases:"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                    <TextView />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_width="24dp" />
+                    <TextView />
+                    <TextView
+                        android:text="Engine start levers (both)"
+                        android:textSize="18dp"
+                        android:layout_width="152dp" />
+                    <TextView
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1"
+                        android:textSize="18dp"
+                        android:layout_height="fill_parent" />
+                    <TextView
+                        android:text="IDLE detent"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="bottom" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_marginTop="24dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:text="4"
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="If EGT reaches 950°C or there is no increase in EGT within 30 seconds:"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                    <TextView />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_column="1">
+                <TableRow
+                    android:layout_weight="1"
+                    android:layout_width="fill_parent">
+                    <TextView
+                        android:layout_width="24dp" />
+                    <TextView />
+                    <TextView
+                        android:text="Engine fire switch"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="Rotate to the other stop and hold for 1 second"
+                        android:textSize="18dp"
+                        android:layout_width="128dp" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="24dp" />
+                    <TextView />
+                    <TextView
+                        android:text="Engine start lever (affected engine):"
+                        android:textSize="18dp"
+                        android:layout_width="144dp"
+                        android:layout_height="fill_parent" />
+                    <TextView
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1"
+                        android:textSize="18dp"
+                        android:layout_height="fill_parent" />
+                    <TextView
+                        android:text="Confirm"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="bottom" />
+                    <TextView
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1"
+                        android:textSize="18dp"
+                        android:layout_height="fill_parent" />
+                    <TextView
+                        android:text="CUTOFF, then IDLE detent"
+                        android:textSize="18dp"
+                        android:layout_width="96dp"
+                        android:layout_height="64dp"
+                        android:gravity="bottom" />
+                </TableRow>
+            </TableLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@xml/dashed_line" />
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="5"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="At or above FL270, set airspeed to 275 knots."
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Below FL270, set airspeed to 300 knots."
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="6"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Engines can accelerate to idle very slowly, especially at high altitudes or in heavy precipitation. If N2 is steadily increasing and EGT stays within limits, do not interrupt the start."
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="7"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Do not wait for a successful engine start before starting the APU."
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_marginTop="24dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:text="8"
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="Choose one:"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="◆"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="APU is available for start:"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_width="30px" />
+                    <TextView
+                        android:layout_column="2"
+                        android:layout_width="30px" />
+                    <TextView
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_column="3"
+                        android:text="APU"
+                        android:layout_marginLeft="3dp" />
+                    <TextView
+                        android:background="@xml/dotted_line"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="START"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_width="30px" />
+                    <TextView
+                        android:layout_column="2"
+                        android:layout_width="30px" />
+                    <TextView
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_column="3"
+                        android:text="▶▶ Go to step 9"
+                        android:layout_marginLeft="3dp" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="◆"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="APU is not available:"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow
+                    android:minWidth="25px"
+                    android:minHeight="25px">
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_width="30px" />
+                    <TextView
+                        android:layout_column="2"
+                        android:layout_width="30px" />
+                    <TextView
+                        android:layout_column="3"
+                        android:text="▶▶ Go to step 10"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="3dp" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_marginTop="24dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:text="9"
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="When APU is running:"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                    <TextView />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_column="1">
+                <TableRow
+                    android:layout_weight="1"
+                    android:layout_width="fill_parent">
+                    <TextView
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Engine fire switch"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="Rotate to the other stop and hold for 1 second"
+                        android:textSize="18dp"
+                        android:layout_width="128dp" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_width="24dp" />
+                    <TextView />
+                    <TextView
+                        android:text="APU GEN switches (both)"
+                        android:textSize="18dp"
+                        android:layout_width="152dp" />
+                    <TextView
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1"
+                        android:textSize="18dp"
+                        android:layout_height="fill_parent" />
+                    <TextView
+                        android:text="ON, one at a time"
+                        android:textSize="18dp"
+                        android:layout_width="104dp" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_marginTop="24dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:text="10"
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="Choose one:"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                <TableRow>
+                    <TableLayout
+                        android:layout_column="1"
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <TableRow
+                            android:id="@+id/tableRow1">
+                            <TextView
+                                android:layout_column="0"
+                                android:text="◆"
+                                android:textSize="18dp" />
+                            <TextView
+                                android:text="One or both engines start:"
+                                android:textSize="18dp"
+                                android:layout_width="wrap_content" />
+                        </TableRow>
+                        <TableRow
+                            android:minWidth="25px"
+                            android:minHeight="25px">
+                            <TextView
+                                android:layout_column="1"
+                                android:text="▶▶ Go to step 15"
+                                android:textSize="18dp"
+                                android:layout_marginLeft="24dp" />
+                        </TableRow>
+                    </TableLayout>
+                </TableRow>
+                <TableRow>
+                    <TableLayout
+                        android:layout_column="1"
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <TableRow>
+                            <TextView
+                                android:layout_column="0"
+                                android:text="◆"
+                                android:textSize="18dp" />
+                            <TextView
+                                android:text="Neither engine starts:"
+                                android:textSize="18dp"
+                                android:layout_width="248dp" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="fill_parent">
+                            <TextView
+                                android:text="▶▶ Go to step 11"
+                                android:textSize="18dp"
+                                android:layout_column="1"
+                                android:layout_width="248dp"
+                                android:layout_marginLeft="24dp" />
+                        </TableRow>
+                    </TableLayout>
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_marginTop="24dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:text="11"
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="Choose one:"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                <TableRow>
+                    <TableLayout
+                        android:layout_column="1"
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <TableRow>
+                            <TextView
+                                android:layout_column="0"
+                                android:text="◆"
+                                android:textSize="18dp" />
+                            <TextView
+                                android:text="N2 is at or above 11%:"
+                                android:textSize="18dp"
+                                android:layout_width="wrap_content" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="fill_parent">
+                            <TextView
+                                android:text="Attempt a windmill start."
+                                android:textSize="18dp"
+                                android:layout_column="1"
+                                android:layout_width="wrap_content"
+                                android:layout_marginLeft="24dp" />
+                        </TableRow>
+                        <TableRow
+                            android:minWidth="25px"
+                            android:minHeight="25px">
+                            <TextView
+                                android:layout_column="1"
+                                android:text="▶▶ Go to step 13"
+                                android:textSize="18dp"
+                                android:layout_marginLeft="24dp" />
+                        </TableRow>
+                    </TableLayout>
+                </TableRow>
+                <TableRow>
+                    <TableLayout
+                        android:layout_column="1"
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <TableRow>
+                            <TextView
+                                android:layout_column="0"
+                                android:text="◆"
+                                android:textSize="18dp" />
+                            <TextView
+                                android:text="N2 is below 11%:"
+                                android:textSize="18dp"
+                                android:layout_width="wrap_content" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="fill_parent">
+                            <TextView
+                                android:text="▶▶ Go to step 12"
+                                android:textSize="18dp"
+                                android:layout_column="1"
+                                android:layout_width="wrap_content"
+                                android:layout_marginLeft="24dp" />
+                        </TableRow>
+                    </TableLayout>
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_marginTop="24dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:text="12"
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="Choose one:"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                <TableRow>
+                    <TableLayout
+                        android:layout_column="1"
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <TableRow>
+                            <TextView
+                                android:layout_column="0"
+                                android:text="◆"
+                                android:textSize="18dp" />
+                            <TextView
+                                android:text="APU bleed air is available:"
+                                android:textSize="18dp"
+                                android:layout_width="wrap_content" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="fill_parent">
+                            <TextView
+                                android:text="Attempt a starter assist start."
+                                android:textSize="18dp"
+                                android:layout_column="1"
+                                android:layout_width="wrap_content"
+                                android:layout_marginLeft="24dp" />
+                        </TableRow>
+                        <TableRow
+                            android:minWidth="25px"
+                            android:minHeight="25px">
+                            <TextView
+                                android:layout_column="1"
+                                android:text="▶▶ Go to step 16"
+                                android:textSize="18dp"
+                                android:layout_marginLeft="24dp" />
+                        </TableRow>
+                    </TableLayout>
+                </TableRow>
+                <TableRow>
+                    <TableLayout
+                        android:layout_column="1"
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <TableRow>
+                            <TextView
+                                android:layout_column="0"
+                                android:text="◆"
+                                android:textSize="18dp" />
+                            <TextView
+                                android:text="APU bleed air is not available:"
+                                android:textSize="18dp"
+                                android:layout_width="wrap_content" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="fill_parent">
+                            <TextView
+                                android:text="Attempt a windmill start."
+                                android:textSize="18dp"
+                                android:layout_column="1"
+                                android:layout_width="wrap_content"
+                                android:layout_marginLeft="24dp" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="fill_parent">
+                            <TextView
+                                android:text="▶▶ Go to step 13"
+                                android:textSize="18dp"
+                                android:layout_column="1"
+                                android:layout_width="wrap_content"
+                                android:layout_marginLeft="24dp" />
+                        </TableRow>
+                    </TableLayout>
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="13"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Thrust levers (both)"
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="Close"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="14"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Engine start lever (either)"
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="144dp" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="CUTOFF, then IDLE detent"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom"
+                        android:layout_width="112dp" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="The engine can accelerate to idle very slowly especially at high altitudes or in heavy precipitation. If N2 is steadily increasing and EGT stays within limits, do not interrupt the start."
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_marginTop="24dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:text="15"
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="When engine parameters have stabilized:"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                    <TextView />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_width="24dp" />
+                    <TextView />
+                    <TextView
+                        android:text="ENGINE START switch (affected engine)"
+                        android:textSize="18dp"
+                        android:layout_width="184dp" />
+                    <TextView
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="As needed"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="24dp" />
+                    <TextView />
+                    <TextView
+                        android:text="Thrust lever (operating engine)"
+                        android:textSize="18dp"
+                        android:layout_width="184dp" />
+                    <TextView
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1"
+                        android:textSize="18dp"
+                        android:layout_height="fill_parent" />
+                    <TextView
+                        android:text="Advance slowly"
+                        android:textSize="18dp"
+                        android:layout_width="88dp" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="24dp" />
+                    <TextView />
+                    <TextView
+                        android:text="Engine GEN switch (operating side)"
+                        android:textSize="18dp"
+                        android:layout_width="184dp" />
+                    <TextView
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="ON"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="24dp" />
+                    <TextView />
+                    <TextView
+                        android:text="►► Go to step 25"
+                        android:textSize="18dp"
+                        android:layout_width="184dp" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="16"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Thrust levers (both)"
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="Close"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="17"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="WING ANTI–ICE switch"
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="OFF"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="18"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="PACK switches (both)"
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="OFF"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="19"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="APU BLEED air switch"
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="ON"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="20"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Ignition select switch"
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="BOTH"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="21"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Engine start lever (either)"
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="140dp" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1"
+                        android:layout_gravity="bottom" />
+                    <TextView
+                        android:text="Confirm"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1"
+                        android:layout_gravity="bottom" />
+                    <TextView
+                        android:text="CUTOFF"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="bottom" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="22"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="ENGINE START switch"
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="GRD"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_marginTop="24dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:text="23"
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="When N2 is at or above 11%:"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                    <TextView />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_width="24dp" />
+                    <TextView />
+                    <TextView
+                        android:text="Engine start lever"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="IDLE detent"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_width="24dp" />
+                    <TextView />
+                    <TextView
+                        android:text="The engine can accelerate to idle very slowly especially at high altitudes or in heavy precipitation. If N2 is steadily increasing and EGT stays within limits, do not interrupt the start."
+                        android:textSize="18dp"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_marginTop="24dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:text="24"
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="When engine parameters have stabilized:"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                    <TextView />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_width="24dp" />
+                    <TextView />
+                    <TextView
+                        android:text="APU BLEED air switch"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="OFF"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="24dp" />
+                    <TextView />
+                    <TextView
+                        android:text="ENGINE START switch (affected engine)"
+                        android:textSize="18dp"
+                        android:layout_width="180dp" />
+                    <TextView
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="As needed"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="24dp" />
+                    <TextView />
+                    <TextView
+                        android:text="Thrust lever (operating engine)"
+                        android:textSize="18dp"
+                        android:layout_width="180dp" />
+                    <TextView
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1"
+                        android:textSize="18dp"
+                        android:layout_height="fill_parent" />
+                    <TextView
+                        android:text="Advance slowly"
+                        android:textSize="18dp"
+                        android:layout_width="88dp" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="24dp" />
+                    <TextView />
+                    <TextView
+                        android:text="Engine GEN switch (operating side)"
+                        android:textSize="18dp"
+                        android:layout_width="180dp" />
+                    <TextView
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="ON"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="24dp" />
+                    <TextView />
+                    <TextView
+                        android:text="PACK switch (operating side)"
+                        android:textSize="18dp"
+                        android:layout_width="180dp" />
+                    <TextView
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="AUTO"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_marginTop="24dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:text="25"
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="Choose one:"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="◆"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="Both the captain's and first officer's primary attitude displays are operative and ATT flags are not shown:"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_width="30px" />
+                    <TextView
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:text="▶▶ Go to step 30"
+                        android:layout_marginLeft="3dp" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="◆"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="Both the captain's and first officer's primary attitude displays are failed:"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1" />
+                </TableRow>
+                <TableRow
+                    android:minWidth="25px"
+                    android:minHeight="25px">
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_width="30px" />
+                    <TextView
+                        android:layout_column="2"
+                        android:text="▶▶ Go to step 26"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="3dp" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="◆"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="Only the first officer's primary attitude display is failed:"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_width="30px" />
+                    <TextView
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:text="IRS TRANSFER switch"
+                        android:layout_marginLeft="3dp" />
+                    <TextView
+                        android:background="@xml/dotted_line"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="BOTH ON L"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp">
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_width="30px" />
+                    <TextView
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:text="Do not engage either autopilot."
+                        android:layout_marginLeft="3dp" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_width="30px" />
+                    <TextView
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:text="►► Go to step 30"
+                        android:layout_marginLeft="3dp" />
+                </TableRow>
+            </TableLayout>
+            <TextView
+                android:text="Action is irreversible. Do this step only if both the captain's and first officer's primary attitude displays are failed."
+                android:layout_column="1"
+                android:textSize="18dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="#BFFFCF00"
+                android:layout_weight="1" />
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="26"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="IRS MODE selectors (both)"
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="ATT"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Maintain straight and level, constant airspeed flight until attitude displays recover (approximately 30 seconds)."
+                        android:textSize="18dp"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="The primary attitude displays stay failed and the SET IRS HDG prompt on the POS INIT page is blank until the attitude mode alignment is complete."
+                        android:textSize="18dp"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="27"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Enter magnetic heading on the POS INIT page or on the overhead IRS display unit by selecting HDG/STS."
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="28"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="The MAP display is not available."
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_marginTop="24dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blueGrey600">
+                <TableRow>
+                    <TextView
+                        android:text="Note:"
+                        android:layout_column="0"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="Periodically enter updated heading on the POS INIT page or on the overhead IRS display unit by selecting HDG/STS."
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="29"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Do not engage either autopilot."
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_marginTop="24dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:text="30"
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="Choose one:"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="◆"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="Both engines are running:"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_width="30px" />
+                    <TextView
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:text="Run the APU as needed."
+                        android:layout_marginLeft="3dp" />
+                </TableRow>
+            </TableLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ ■ ■ ■"
+                android:textSize="18dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingVertical="24dp" />
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="◆"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="One engine stays failed:"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1" />
+                </TableRow>
+                <TableRow
+                    android:minWidth="25px"
+                    android:minHeight="25px">
+                    <TextView
+                        android:layout_column="0" />
+                    <TextView
+                        android:layout_column="1" />
+                    <TextView
+                        android:layout_column="2"
+                        android:text="▶▶ Go to the Engine In-Flight Start checklist"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content" />
+                </TableRow>
+            </TableLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ ■ ■ ■"
+                android:textSize="18dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="24dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

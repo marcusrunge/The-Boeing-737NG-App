@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_fuel_order"
+        android:icon="@drawable/ic_stat_gas_station"
+        android:title="Fuel Order" />
+    <item
+        android:id="@+id/nav_fuel_check"
+        android:icon="@drawable/ic_stat_clipboard"
+        android:title="Fuel Check" />
+    <item
+        android:id="@+id/nav_baggage_distribution"
+        android:icon="@drawable/ic_stat_work"
+        android:title="Baggage Distribution" />
+    <item
+        android:id="@+id/nav_brake_cooling"
+        android:icon="@drawable/ic_stat_brake_system_warning"
+        android:title="Brake Cooling" />
+    <item
+        android:id="@+id/circuit_breaker"
+        android:icon="@drawable/ic_stat_circuit_breaker"
+        android:title="Circuit Breaker" />
+    <item
+        android:id="@+id/nav_checklists"
+        android:icon="@drawable/ic_stat_playlist_add_check"
+        android:title="Checklists" />
+    <item
+        android:id="@+id/nav_manouvers"
+        android:icon="@drawable/ic_stat_steering"
+        android:title="Manouvers" />
+    <item
+        android:id="@+id/nav_limitations"
+        android:icon="@drawable/ic_stat_limit"
+        android:title="Limitations" />
+  </group>
+</menu>

@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:fillViewport="true"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TableLayout
+                android:layout_marginTop="24dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blueGrey600">
+                <TableRow>
+                    <TextView
+                        android:text="Condition:"
+                        android:layout_column="0"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="Evacuation is needed."
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="1"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="PARKING BRAKE"
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="Set"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom" />
+                    <TextView
+                        android:text="C"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom"
+                        android:layout_width="40dp"
+                        android:gravity="right" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="2"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Speedbrake lever"
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="DOWN"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom" />
+                    <TextView
+                        android:text="C"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom"
+                        android:layout_width="40dp"
+                        android:gravity="right" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="3"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="FLAP lever"
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="40"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom" />
+                    <TextView
+                        android:text="F/O"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom"
+                        android:layout_width="40dp"
+                        android:gravity="right" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="4"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Pressurization mode selector"
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="MAN"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom" />
+                    <TextView
+                        android:text="F/O"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom"
+                        android:layout_width="40dp"
+                        android:gravity="right" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="5"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Outflow VALVE switch"
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="128dp" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="Hold in OPEN until the outflow VALVE indication shows fully open to depressurize the airplane"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom"
+                        android:layout_width="144dp" />
+                    <TextView
+                        android:text="F/O"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom"
+                        android:layout_width="40dp"
+                        android:gravity="right" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="6"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="If time allows, verify that the flaps are 40 before the engine start levers are moved to CUTOFF."
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="C"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom"
+                        android:layout_width="40dp"
+                        android:gravity="right" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="7"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Engine start levers (both)"
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="CUTOFF"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom" />
+                    <TextView
+                        android:text="C"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom"
+                        android:layout_width="40dp"
+                        android:gravity="right" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="8"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Advise the cabin to evacuate."
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="C"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom"
+                        android:layout_width="40dp"
+                        android:gravity="right" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="9"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Advise the tower."
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="C"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom"
+                        android:layout_width="40dp"
+                        android:gravity="right" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="10"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Engine and APU fire switches (all)"
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="144dp" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="Override and pull"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom"
+                        android:layout_width="72dp" />
+                    <TextView
+                        android:text="F/O"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom"
+                        android:layout_width="40dp"
+                        android:gravity="right" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_marginTop="24dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:text="11"
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="If an engine or APU fire warning occurs:"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                    <TextView />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_width="24dp" />
+                    <TextView />
+                    <TextView
+                        android:text="Illuminated fire switch"
+                        android:textSize="18dp"
+                        android:layout_width="96dp" />
+                    <TextView
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="Rotate to the stop and hold for 1 second"
+                        android:textSize="18dp"
+                        android:layout_width="112dp" />
+                    <TextView
+                        android:text="F/O"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom"
+                        android:layout_width="40dp"
+                        android:gravity="right" />
+                </TableRow>
+            </TableLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ ■ ■ ■"
+                android:textSize="18dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="24dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:fillViewport="true"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="Windshear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="24dp" />
+            <TextView
+                android:text="Windshear Caution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+            <TextView
+                android:text="For predictive windshear caution alert: (“MONITOR RADAR DISPLAY” aural)."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp" />
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blueGrey100">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="0.5dp">
+                    <TextView
+                        android:text="Pilot Flying"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_gravity="center_horizontal" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginLeft="0.5dp"
+                    android:layout_marginTop="1dp">
+                    <TextView
+                        android:text="Pilot Monitoring"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_gravity="center_horizontal" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blueGrey100">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blueGrey700"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="24dp">
+                    <TextView
+                        android:text="Maneuver as required to avoid the windshear."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_gravity="center_horizontal" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:text="Windshear Warning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+            <TextView
+                android:text="Predictive windshear warning during takeoff roll: (“WINDSHEAR AHEAD, WINDSHEAR AHEAD” aural)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp" />
+            <TextView
+                android:text="• prior to V1, reject takeoff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_marginLeft="12dp" />
+            <TextView
+                android:text="• after V1, perform the Windshear Escape Maneuver."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_marginLeft="12dp" />
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="24dp" />
+            <TextView
+                android:text="Windshear encountered during takeoff roll:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp" />
+            <TextView
+                android:text="• If windshear is encountered prior to V1, there may not be sufficient runway remaining to stop if an RTO is initiated at V1. At VR, rotate at a normal rate toward a 15 degree pitch attitude. Once airborne, perform the Windshear Escape Maneuver."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_marginLeft="12dp" />
+            <TextView
+                android:text="• If windshear is encountered near the normal rotation speed and airspeed suddenly decreases, there may not be sufficient runway left to accelerate back to normal takeoff speed. If there is insufficient runway left to stop, initiate a normal rotation at least 2,000 feet before the end of the runway, even if airspeed is low. Higher than normal attitudes may be required to lift off in the remaining runway. Ensure maximum thrust is set."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_marginLeft="12dp" />
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="24dp" />
+            <TextView
+                android:text="Predictive windshear warning during approach: (“GO–AROUND, WINDSHEAR AHEAD” aural)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp" />
+            <TextView
+                android:text="• perform the Windshear Escape Maneuver, or, at pilot’s discretion, perform a normal go–around."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_marginLeft="12dp" />
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="24dp" />
+            <TextView
+                android:text="Windshear encountered in flight:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp" />
+            <TextView
+                android:text="• perform the Windshear Escape Maneuver."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_marginLeft="12dp" />
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blueGrey600"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="Note:"
+                        android:layout_column="0"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:text="The following are indications the airplane is in windshear:"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:text="• windshear warning (two–tone siren followed by “WINDSHEAR, WINDSHEAR, WINDSHEAR”) or"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="18dp" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:text="• unacceptable flight path deviations."
+                        android:layout_marginLeft="15dp"
+                        android:textSize="18dp" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Note:"
+                        android:layout_column="0"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:text="Unacceptable flight path deviations are recognized as uncontrolled changes from normal steady state flight conditions below 1000 feet AGL, in excess of any of the following:"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:text="• 15 knots indicated airspeed"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="18dp" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:text="• 500 fpm vertical speed"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="18dp" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:text="• 5° pitch attitude"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="18dp" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:text="• 1 dot displacement from the glideslope"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="18dp" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:text="• unusual thrust lever position for a significant period of time.• unusual thrust lever position for a significant period of time."
+                        android:layout_marginLeft="15dp"
+                        android:textSize="18dp" />
+                </TableRow>
+            </TableLayout>
+            <TextView
+                android:text="Windshear Escape Maneuver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blueGrey100">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="0.5dp">
+                    <TextView
+                        android:text="Pilot Flying"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_gravity="center_horizontal" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginLeft="0.5dp"
+                    android:layout_marginTop="1dp">
+                    <TextView
+                        android:text="Pilot Monitoring"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_gravity="center_horizontal" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blueGrey100">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="0.5dp">
+                    <TextView
+                        android:text="MANUAL FLIGHT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="3dp" />
+                    <TextView
+                        android:text="• Disconnect autopilot."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp" />
+                    <TextView
+                        android:text="• Press either TO/GA switch."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp" />
+                    <TextView
+                        android:text="• Aggressively apply maximum thrust*"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp" />
+                    <TextView
+                        android:text="• Disconnect autothrottle."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp" />
+                    <TextView
+                        android:text="• Simultaneously roll wings level and rotate toward an initial pitch attitude of 15°."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp" />
+                    <TextView
+                        android:text="• Retract speedbrakes."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp" />
+                    <TextView
+                        android:text="• Follow flight director TO/GA guidance (if available) **"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginLeft="0.5dp"
+                    android:layout_marginTop="1dp">
+                    <TextView
+                        android:text="• Verify maximum* thrust."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="3dp" />
+                    <TextView
+                        android:text="• Verify all required actions have been done and call out any omissions."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="3dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blueGrey100">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="0.5dp">
+                    <TextView
+                        android:text="AUTOMATIC FLIGHT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="3dp" />
+                    <TextView
+                        android:text="• Press either TO/GA switch***"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp" />
+                    <TextView
+                        android:text="• Verify TO/GA mode annunciation."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp" />
+                    <TextView
+                        android:text="• Verify GA thrust."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp" />
+                    <TextView
+                        android:text="• Retract speedbrakes."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp" />
+                    <TextView
+                        android:text="• Monitor system performance****"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="27dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginLeft="0.5dp"
+                    android:layout_marginTop="1dp">
+                    <TextView
+                        android:text="• Verify GA* thrust."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="3dp" />
+                    <TextView
+                        android:text="• Verify all required actions have been done and call out any omissions."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="3dp" />
+                    <TextView
+                        android:text="• Verify all required actions have been completed and call out any omissions."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="3dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blueGrey100">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="0.5dp"
+                    android:layout_marginBottom="1dp">
+                    <TextView
+                        android:text="MANUAL OR AUTOMATIC FLIGHT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="3dp" />
+                    <TextView
+                        android:text="• Do not change flap or gear configuration until windshear is no longer a factor."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp" />
+                    <TextView
+                        android:text="• Monitor vertical speed and altitude."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp" />
+                    <TextView
+                        android:text="• Do not attempt to regain lost airspeed until windshear is no longer a factor."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginLeft="0.5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp">
+                    <TextView
+                        android:text="• Monitor vertical speed and altitude."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="3dp" />
+                    <TextView
+                        android:text="• Call out any trend toward terrain contact, descending flight path, or significant airspeed changes."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="3dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blueGrey600"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="Note:"
+                        android:layout_column="0"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="Aft control column force increases as the airspeed decreases. In all cases, the pitch attitude that results in intermittent stick shaker or initial buffet is the upper pitch attitude limit. Flight at intermittent stick shaker may be required to obtain a positive terrain separation. Smooth, steady control will avoid a pitch attitude overshoot and stall."
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Note:"
+                        android:layout_column="0"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="*Maximum thrust can be obtained by advancing the thrust levers full forward if the EECs are in the normal mode. If terrain contact is imminent, advance thrust levers full forward."
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Note:"
+                        android:layout_column="0"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="**Do not exceed the Pitch Limit Indication."
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Note:"
+                        android:layout_column="0"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="*** If TO/GA is not available, disconnect autopilot and autothrottle and fly manually."
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_marginTop="24dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#BFC00000">
+                <TableRow>
+                    <TextView
+                        android:text="WARNING:"
+                        android:layout_column="0"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="**** Severe windshear may exceed the performance of the AFDS. The pilot flying must be prepared to disconnect the autopilot and autothrottle and fly manually."
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

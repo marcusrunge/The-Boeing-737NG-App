@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <!--These two sections should match in length
+  more icons from:  http://romannurik.github.io/AndroidAssetStudio/-->
+  <string-array name="fuel_check_sections">
+    <item>Check</item>
+    <item>List</item>
+    <item>Trend</item>
+  </string-array>
+  <string-array name="fuel_order_sections">
+    <item>Distribution</item>
+    <item>Uplift</item>
+    <item>Order</item>
+  </string-array>
+  <string-array name="brake_cooling_sections">
+    <item>Conditional</item>
+    <item>Indicational</item>
+  </string-array>
+  <string-array name="checklists_sections">
+    <item>Quick Action</item>
+    <item>Lost Com</item>
+  </string-array>
+  <string-array name="settings_sections">
+    <item>Settings</item>
+    <item>Disclaimer</item>
+    <item>About</item>
+  </string-array>  
+</resources>

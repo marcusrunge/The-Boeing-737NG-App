@@ -1,0 +1,1230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:fillViewport="true"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TableLayout
+                android:layout_marginTop="24dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blueGrey600">
+                <TableRow>
+                    <TextView
+                        android:text="Condition:"
+                        android:layout_column="0"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="Smoke, fire or fumes occur."
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="1"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Diversion may be needed."
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="2"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Don oxygen masks and set regulators to 100%, as needed."
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="3"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Don smoke goggles, as needed."
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="4"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Establish crew and cabin communications."
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="5"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="BUS TRANSFER switch"
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="OFF"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="6"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="CAB/UTIL switch"
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="OFF"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="7"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="IFE/PASS SEAT switch"
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="OFF"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="8"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="GALLEY switch"
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="OFF"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="9"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="RECIRC FAN switch"
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="OFF"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="10"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Instruct the cabin crew to turn off the IFE and PC power switches (as installed)."
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="11"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="APU BLEED air switch"
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="OFF"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_marginTop="24dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:text="12"
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="Anytime the smoke or fumes become the greatest threat:"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                    <TextView />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="►► Go to the Smoke or Fumes Removal checklist"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="24dp" />
+                    <TextView />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_marginTop="24dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:text="13"
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="Choose one:"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="◆"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="Source of the smoke, fire or fumes is obvious and can be extinguished quickly:"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_width="30px" />
+                    <TextView
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:text="Isolate and extinguish the source."
+                        android:layout_marginLeft="3dp" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_width="30px" />
+                    <TextView
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:text="If possible, remove power from the affected equipment by switch or circuit breaker in the flight deck or cabin."
+                        android:layout_marginLeft="3dp" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_width="30px" />
+                    <TextView
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:text="►► Go to step 14"
+                        android:layout_marginLeft="3dp" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="◆"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="Source of the smoke, fire or fumes is not obvious or cannot be extinguished quickly:"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_width="30px" />
+                    <TextView
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:text="►► Go to step 15"
+                        android:layout_marginLeft="3dp" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_marginTop="24dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:text="14"
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="Choose one:"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="◆"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="Source is visually confirmed to be extinguished and the smoke or fumes are decreasing:"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_width="30px" />
+                    <TextView
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:text="Continue the flight at the captain's discretion."
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_width="30px" />
+                    <TextView
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:text="Restore unpowered items at the captain's discretion."
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_width="30px" />
+                    <TextView
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:text="►► Go to the Smoke or Fumes Removal checklist, if needed"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ ■ ■ ■"
+                android:textSize="18dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingVertical="24dp" />
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="◆"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="Source is not visually confirmed to be extinguished or smoke or fumes are not decreasing:"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_width="30px" />
+                    <TextView
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:text="►► Go to step 15"
+                        android:layout_marginLeft="3dp" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="15"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="EQUIP COOLING SUPPLY and EXHAUST switches (both)"
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="204dp" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="ALTN"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_marginTop="24dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:text="16"
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="Instruct the cabin crew to:"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="Turn on cabin reading lights."
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="Turn on galley attendants work lights."
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="Turn off cabin fluorescent light switches."
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="17"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Divert to the nearest suitable airport while continuing the checklist."
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="18"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Consider an immediate landing if the smoke, fire or fumes situation becomes uncontrollable."
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="19"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Do not delay landing in an attempt to complete all of the following steps."
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="20"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="ISOLATION VALVE switch"
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="CLOSE"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="21"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="R PACK switch"
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="OFF"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="22"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Wait 2 minutes unless the smoke or fumes are increasing. This allows time for the smoke or fumes to clear."
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_marginTop="24dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:text="23"
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="Choose one:"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                <TableRow>
+                    <TableLayout
+                        android:layout_column="1"
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <TableRow>
+                            <TextView
+                                android:layout_column="0"
+                                android:text="◆"
+                                android:textSize="18dp" />
+                            <TextView
+                                android:text="Smoke or fumes are decreasing:"
+                                android:textSize="18dp"
+                                android:layout_width="wrap_content" />
+                        </TableRow>
+                        <TableRow
+                            android:minWidth="25px"
+                            android:minHeight="25px">
+                            <TextView
+                                android:layout_column="1"
+                                android:text="►► Go to the Smoke or Fumes Removal checklist, if needed"
+                                android:textSize="18dp"
+                                android:layout_marginLeft="24dp"
+                                android:layout_weight="1" />
+                        </TableRow>
+                    </TableLayout>
+                </TableRow>
+            </TableLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ ■ ■ ■"
+                android:textSize="18dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingVertical="24dp" />
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="◆"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="Smoke or fumes continue or are increasing:"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:layout_column="1" />
+                    <TextView
+                        android:textSize="18dp"
+                        android:layout_width="184dp"
+                        android:layout_column="2"
+                        android:text="R PACK switch"
+                        android:layout_marginLeft="3dp" />
+                    <TextView
+                        android:background="@xml/dotted_line"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="bottom"
+                        android:layout_height="fill_parent" />
+                    <TextView
+                        android:text="AUTO"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="bottom" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:layout_column="1" />
+                    <TextView
+                        android:textSize="18dp"
+                        android:layout_width="184dp"
+                        android:layout_column="2"
+                        android:text="L PACK switch"
+                        android:layout_marginLeft="3dp" />
+                    <TextView
+                        android:background="@xml/dotted_line"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="bottom"
+                        android:layout_height="fill_parent" />
+                    <TextView
+                        android:text="OFF"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="bottom" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:layout_column="1" />
+                    <TextView
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:text="Consider an immediate landing."
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:layout_column="1" />
+                    <TextView
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:text="►► Go to the Smoke or Fumes Removal checklist, if needed"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="24"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Wait 2 minutes unless the smoke or fumes are increasing. This allows time for the smoke or fumes to clear."
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_marginTop="24dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:text="25"
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="Choose one:"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                <TableRow>
+                    <TableLayout
+                        android:layout_column="1"
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <TableRow>
+                            <TextView
+                                android:layout_column="0"
+                                android:text="◆"
+                                android:textSize="18dp" />
+                            <TextView
+                                android:text="Smoke or fumes are decreasing:"
+                                android:textSize="18dp"
+                                android:layout_width="wrap_content" />
+                        </TableRow>
+                        <TableRow
+                            android:minWidth="25px"
+                            android:minHeight="25px">
+                            <TextView
+                                android:layout_column="1"
+                                android:text="►► Go to the Smoke or Fumes Removal checklist, if needed"
+                                android:textSize="18dp"
+                                android:layout_marginLeft="24dp"
+                                android:layout_weight="1" />
+                        </TableRow>
+                    </TableLayout>
+                </TableRow>
+            </TableLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ ■ ■ ■"
+                android:textSize="18dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingVertical="24dp" />
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="◆"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="Smoke or fumes continue or are increasing:"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_width="30px" />
+                    <TextView
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:text="L PACK switch"
+                        android:layout_marginLeft="3dp" />
+                    <TextView
+                        android:background="@xml/dotted_line"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="bottom"
+                        android:layout_height="fill_parent" />
+                    <TextView
+                        android:text="OFF"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="bottom" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_width="30px" />
+                    <TextView
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:text="Consider an immediate landing."
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_width="30px" />
+                    <TextView
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:text="►► Go to the Smoke or Fumes Removal checklist, if needed"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ ■ ■ ■"
+                android:textSize="18dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="24dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

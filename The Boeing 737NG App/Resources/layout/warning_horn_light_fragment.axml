@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:fillViewport="true"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TableLayout
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blueGrey600">
+                <TableRow>
+                    <TextView
+                        android:text="Condition:"
+                        android:layout_column="0"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="One or more of these occur:"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="• In flight, at an airplane flight altitude above 10,000 feet MSL, the intermittent warning horn sounds or a CABIN ALTITUDE light (if installed and operative) illuminates"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="• On the ground, the intermittent warning horn sounds or a TAKEOFF CONFIG light (if installed and operative) illuminates when advancing the thrust levers to takeoff thrust."
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_marginTop="24dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:text="1"
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="If the intermittent warning horn sounds or a CABIN ALTITUDE light (if installed and operative) illuminates in flight at an airplane flight altitude above 10,000 feet MSL:"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </TableRow>
+                <TableRow>
+                    <TableLayout
+                        android:layout_column="1"
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <TableRow>
+                            <TextView
+                                
+                                
+                                android:textSize="18dp"
+                                android:layout_column="1"
+                                android:text="Don the oxygen masks and set the regulators to 100%."
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1" />
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                
+                                
+                                android:textSize="18dp"
+                                android:layout_column="1"
+                                android:text="Establish crew communications."
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="fill_parent">
+                            <TextView
+                                
+                                
+                                android:text="▶▶ Go to the CABIN ALTITUDE WARNING or Rapid Depressurization checklist"
+                                android:textSize="18dp"
+                                android:layout_column="1"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1" />
+                        </TableRow>
+                    </TableLayout>
+                </TableRow>
+            </TableLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ ■ ■ ■"
+                android:textSize="18dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingVertical="24dp" />
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:text="2"
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="If the intermittent warning horn sounds or a TAKEOFF CONFIG light (if installed and operative) illuminates on the ground when advancing the thrust levers to takeoff thrust:"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </TableRow>
+                <TableRow>
+                    <TableLayout
+                        android:layout_column="1"
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <TableRow>
+                            <TextView
+                                
+                                
+                                android:textSize="18dp"
+                                android:layout_column="1"
+                                android:text="Assure correct airplane takeoff configuration."
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1" />
+                        </TableRow>
+                    </TableLayout>
+                </TableRow>
+            </TableLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@xml/dashed_line" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ ■ ■ ■"
+                android:textSize="18dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="24dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

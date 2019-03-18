@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:fillViewport="true"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableLayout
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blueGrey600">
+                <TableRow>
+                    <TextView
+                        android:text="Condition:"
+                        android:layout_column="0"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="One or more of these occur:"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="• Cabin altitude cannot be controlled"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="• A rapid descent is needed."
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="1"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Announce the emergency descent. The pilot flying will advise the cabin crew, on the PA system, of impending rapid descent. The pilot monitoring will advise ATC and obtain the area altimeter setting."
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="2"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Passenger signs"
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="ON"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="3"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Without delay, descend to the lowest safe altitude or 10,000 feet, whichever is higher."
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="4"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="ENGINE START switches (both)"
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="CONT"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="5"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Thrust levers (both)"
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="104dp" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="Reduce thrust to minimum or as needed for anti-ice"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom"
+                        android:layout_width="128dp" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="6"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Speedbrake"
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="FLIGHT DETENT"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom" />
+                </TableRow>
+            </TableLayout>
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="24dp" />
+            <TextView
+                android:layout_marginTop="24dp"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="If structural integrity is in doubt, limit speed as much as possible and avoid high maneuvering loads."
+                android:background="#BFFFCF00"
+                android:layout_margin="1dp"
+                android:paddingRight="3dp"
+                android:paddingLeft="3dp"
+                android:textSize="18dp"
+                android:gravity="center" />
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="24dp" />
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:text="7"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="Set target speed to Mmo/Vmo."
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" />
+                </TableRow>
+            </TableLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@xml/dashed_line" />
+            <TableLayout
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#BFFFCF00">
+                <TableRow>
+                    <TextView
+                        android:text="Caution!"
+                        android:layout_column="0"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="When gross weight is greater than 64,864 kgs, speed brake will autostow to the 50% flight detent if airspeed exceeds 320 knots. Do not override autostow function unless airspeed is less than 320 knots."
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="18dp" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_marginTop="24dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:text="8"
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="When approaching the level off altitude:"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </TableRow>
+                <TableRow>
+                    <TableLayout
+                        android:layout_column="1"
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <TableRow>
+                            <TextView
+                                
+                                
+                                android:textSize="18dp"
+                                android:layout_column="1"
+                                android:text="Smoothly lower the SPEED BRAKE lever to the DOWN detent and level off. Add thrust and stabilize on altitude and airspeed."
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1" />
+                        </TableRow>
+                    </TableLayout>
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_marginTop="24dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:text="9"
+                        android:layout_column="0"
+                        android:layout_width="24dp"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:text="Crew oxygen regulators"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="ON"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom" />
+                </TableRow>
+                <TableRow
+                    android:minWidth="25px"
+                    android:minHeight="25px">
+                    <TableLayout
+                        android:layout_column="1"
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <TableRow>
+                            <TextView
+                                
+                                
+                                android:textSize="18dp"
+                                android:layout_column="1"
+                                android:text="Flight crew must use oxygen when cabin altitude is above 10,000 feet. To conserve oxygen, move the regulator to Normal."
+                                android:layout_width="wrap_content" />
+                        </TableRow>
+                    </TableLayout>
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="10"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="ENGINE START switches (both)"
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="204dp" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@xml/dotted_line"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="As needed"
+                        android:textSize="18dp"
+                        android:layout_gravity="bottom" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TableRow>
+                    <TextView
+                        android:text="11"
+                        android:layout_column="0"
+                        android:textSize="18dp"
+                        android:layout_width="24dp" />
+                    <TextView
+                        android:text="The new course of action is based on weather, oxygen, fuel remaining and available airports. Use of long range cruise may be needed."
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+            <TextView
+                android:text="■ ■ ■ ■"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:textSize="18dp"
+                android:paddingTop="24dp"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

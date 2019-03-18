@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <GridLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:id="@+id/fuelcheckDatatemplateGridLayout"
+        android:columnCount="3">
+        <TextView
+            android:background="@xml/row_list_divider"
+            android:paddingLeft="4dp"
+            android:text="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/fuelcheckNumberTextView"
+            android:layout_column="0"
+            android:textSize="22dp"
+            android:layout_width="56dp" />
+        <TextView
+            android:paddingLeft="4dp"
+            android:background="@xml/row_list_divider"
+            android:text="00:00 UTC"
+            android:layout_height="wrap_content"
+            android:id="@+id/fuelcheckTimeTextView"
+            android:layout_column="1"
+            android:textSize="22dp"
+            android:layout_width="wrap_content"
+            android:layout_gravity="fill" />
+        <TextView
+            android:paddingLeft="4dp"
+            android:background="@xml/row_end_list_divider"
+            android:text="100"
+            android:layout_height="wrap_content"
+            android:id="@+id/fuelcheckDeltafuelTextView"
+            android:layout_column="2"
+            android:textSize="22dp"
+            android:layout_width="96dp"
+            android:gravity="center_horizontal" />
+    </GridLayout>
+</LinearLayout>

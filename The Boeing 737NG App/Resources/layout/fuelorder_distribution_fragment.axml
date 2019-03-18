@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_marginTop="?android:attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@drawable/plane"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/planeImageView"
+            android:layout_marginBottom="12dp" />
+        <GridLayout
+            android:layout_below="@id/planeImageView"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mainTanksGridLayout"
+            android:columnCount="2">
+            <LinearLayout
+                android:layout_column="0"
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_height="wrap_content"
+                android:id="@+id/tank1LinearLayout"
+                android:layout_gravity="fill"
+                android:layout_width="wrap_content"
+                android:layout_columnWeight="1">
+                <TextView
+                    android:text="NO 1 TANK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tank1TextView"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textSize="18dp" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:id="@+id/fuelQuantity1RelativeLayout">
+                    <TextView
+                        android:text="----"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fuelQuantity1TextView"
+                        android:textSize="22dp"
+                        android:background="@xml/border"
+                        android:layout_centerHorizontal="true"
+                        android:width="74dp"
+                        android:gravity="center" />
+                    <TextView
+                        android:text="kg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tank1MassUnitTextView"
+                        android:layout_toRightOf="@id/fuelQuantity1TextView"
+                        android:textSize="16dp"
+                        android:layout_alignBaseline="@id/fuelQuantity1TextView" />
+                    <TextView
+                        android:layout_below="@id/fuelQuantity1TextView"
+                        android:text="max ---- kg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/maximumFuelQuantity1TextView"
+                        android:layout_centerHorizontal="true"
+                        android:textStyle="italic" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_column="1"
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tank2LinearLayout"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1">
+                <TextView
+                    android:text="NO 2 TANK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tank2TextView"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textSize="18dp" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/fuelQuantity2RelativeLayout"
+                    android:gravity="center">
+                    <TextView
+                        android:text="----"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fuelQuantity2TextView"
+                        android:background="@xml/border"
+                        android:layout_centerHorizontal="true"
+                        android:width="74dp"
+                        android:textSize="22dp"
+                        android:gravity="center" />
+                    <TextView
+                        android:text="kg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tank2MassUnitTextView"
+                        android:layout_toRightOf="@id/fuelQuantity2TextView"
+                        android:textSize="16dp"
+                        android:layout_alignBaseline="@id/fuelQuantity2TextView" />
+                    <TextView
+                        android:text="max ---- kg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/maximumFuelQuantity2TextView"
+                        android:layout_below="@id/fuelQuantity2TextView"
+                        android:layout_centerHorizontal="true"
+                        android:textStyle="italic" />
+                </RelativeLayout>
+            </LinearLayout>
+        </GridLayout>
+        <LinearLayout
+            android:layout_below="@id/mainTanksGridLayout"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/centerTankLinearLayout"
+            android:layout_gravity="fill"
+            android:layout_marginTop="12dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/centerTankRelativeLayout"
+                android:gravity="center">
+                <TextView
+                    android:text="CENTER TANK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/centerTankTextView"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true" />
+                <TextView
+                    android:text="----"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/centerFuelQuantityTextView"
+                    android:background="@xml/border"
+                    android:width="74dp"
+                    android:textSize="22dp"
+                    android:layout_below="@+id/centerTankTextView"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center" />
+                <TextView
+                    android:text="kg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/centerTankMassUnitTextView"
+                    android:layout_toRightOf="@id/centerFuelQuantityTextView"
+                    android:textSize="16dp"
+                    android:layout_alignBaseline="@id/centerFuelQuantityTextView" />
+                <TextView
+                    android:text="max ----- kg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/maximumCenterFuelQuantityTextView"
+                    android:layout_below="@id/centerFuelQuantityTextView"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="italic" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@id/centerTankLinearLayout"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalFuelLinearLayout"
+            android:layout_gravity="fill"
+            android:layout_marginTop="12dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/totalFuelRelativeLayout">
+                <TextView
+                    android:text="TOTAL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/totalFuelTextView"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true" />
+                <Button
+                    android:text="CLEAR"
+                    android:layout_width="52dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/clearTotalFuelButton"
+                    android:layout_alignBaseline="@+id/totalFuelEditText"
+                    android:layout_toLeftOf="@id/totalFuelEditText"
+                    android:background="@color/redA700"
+                    android:drawableTop="@drawable/ic_stat_clear"
+                    android:textColor="@android:color/white"
+                    android:hapticFeedbackEnabled="true" />
+                <EditText
+                    android:inputType="number"
+                    android:layout_width="96dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/totalFuelEditText"
+                    android:layout_below="@+id/totalFuelTextView"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="22dp"
+                    android:gravity="center"
+                    android:maxLength="5" />
+                <TextView
+                    android:text="kg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/totalFuelMassUnitTextView"
+                    android:textSize="16dp"
+                    android:layout_toRightOf="@+id/totalFuelEditText"
+                    android:layout_alignBaseline="@+id/totalFuelEditText"
+                    android:width="52dp" />
+                <TextView
+                    android:text="max ----- kg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/maximumTotalFuelQuantityTextView"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="italic"
+                    android:layout_below="@id/totalFuelEditText" />
+            </RelativeLayout>
+        </LinearLayout>
+        <SeekBar
+            android:id="@+id/fuelDensitySeekBar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@id/totalFuelLinearLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp" />
+        <TextView
+            android:layout_below="@id/fuelDensitySeekBar"
+            android:text="----"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fuelDensityTextView"
+            android:layout_centerHorizontal="true"
+            android:textSize="16dp" />
+        <TextView
+            android:text="kg/ltr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fuelDensityUnitTextView"
+            android:layout_below="@id/fuelDensitySeekBar"
+            android:layout_toRightOf="@id/fuelDensityTextView"
+            android:textSize="16dp" />
+    </RelativeLayout>
+</LinearLayout>

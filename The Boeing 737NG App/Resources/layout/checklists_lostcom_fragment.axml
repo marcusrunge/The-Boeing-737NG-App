@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lostcomRootLinearLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/lostcomTableScrollView"
+        android:layout_marginTop="?android:attr/actionBarSize"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="12dp">
+        <TableLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lostcomTableLayout">
+            <TableRow
+                android:id="@+id/lostcomTableRow1"
+                android:layout_width="wrap_content"
+                android:background="@color/blueGrey600">
+                <TextView
+                    
+                    
+                    android:text="Note:"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="3dp" />
+                <TextView
+                    
+                    
+                    android:id="@+id/textView2"
+                    android:text="Transmit messages twice on the designated frequency(ies), preceded by the phrase TRANSMITTING BLIND and, if necessary, include the addressee(s) for which the message is intended"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/lostcomTableRow2"
+                android:layout_marginTop="12dp">
+                <TextView
+                    
+                    
+                    android:text="1"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    
+                    
+                    android:id="@+id/textView5"
+                    android:text="Set Sqawk 7600"
+                    android:textSize="18dp"
+                    android:layout_weight="1" />
+            </TableRow>
+        <TableRow
+                android:id="@+id/lostcomTableRow3"
+                android:layout_marginTop="12dp"
+                android:background="@color/blueGrey600">
+                <TextView
+                    
+                    
+                    android:id="@+id/textView7"
+                    android:text="Note:"
+                    android:textSize="18dp" />
+                <TextView
+                    
+                    
+                    android:id="@+id/textView8"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:text="A controller who observes an SSR response indicating selection of the communications failure code will determine the extent of the failure by instructing  the pilot to SQUAWK IDENT or to change code. If it is determined that the aircraft receiver is functioning, further control of the aircraft will be continued using code changes or IDENT transmission to acknowledge receipt of clearances. Different procedures may be applied to Mode S equipped aircraft in areas of Mode S coverage." />
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="12dp">
+                <TextView
+                    
+                    
+                    android:text="2"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    
+                    
+                    android:text="Choose one:"
+                    android:textSize="18dp"
+                    android:layout_weight="1" />
+            </TableRow>
+        <TableRow>
+                <TextView
+                    
+                    
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    
+                    
+                    android:text="◆ Visual meteorological conditions:"
+                    android:textSize="18dp"
+                    android:layout_weight="1" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    
+                    
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    
+                    
+                    android:text="►► Go to step 3"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    
+                    
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    
+                    
+                    android:text="◆ Instrument meteorological conditions:"
+                    android:textSize="18dp"
+                    android:layout_weight="1" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    
+                    
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    
+                    
+                    android:text="►► Go to step 6"
+                    android:textSize="18dp"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1" />
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="12dp">
+                <TextView
+                    
+                    
+                    android:text="3"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    
+                    
+                    android:text="Continue to fly in visual meteorological conditions"
+                    android:textSize="18dp"
+                    android:layout_weight="1" />
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="12dp">
+                <TextView
+                    
+                    
+                    android:text="4"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    
+                    
+                    android:text="Land at the nearest suitable aerodrome"
+                    android:textSize="18dp"
+                    android:layout_weight="1" />
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="12dp">
+                <TextView
+                    
+                    
+                    android:text="5"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    
+                    
+                    android:text="Report the arrival by the most expeditious means to the appropriate air traffic control unit."
+                    android:textSize="18dp"
+                    android:layout_weight="1" />
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content">
+                <TextView
+                    
+                    
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    
+                    
+                    android:textSize="18dp"
+                    android:text="■ ■ ■ ■"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" />
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="12dp">
+                <TextView
+                    
+                    
+                    android:text="6"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    
+                    
+                    android:text="Choose one:"
+                    android:textSize="18dp"
+                    android:layout_weight="1" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    
+                    
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    
+                    
+                    android:text="◆ In airspace where radar is not used in the provision of air traffic control:"
+                    android:textSize="18dp"
+                    android:layout_weight="1" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    
+                    
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    
+                    
+                    android:text="►► Go to step 7"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    
+                    
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    
+                    
+                    android:text="◆ In airspace where radar is used in the provision of air traffic control:"
+                    android:textSize="18dp"
+                    android:layout_weight="1" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    
+                    
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    
+                    
+                    android:text="►► Go to step 9"
+                    android:textSize="18dp"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1" />
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="12dp">
+                <TextView
+                    
+                    
+                    android:text="7"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    
+                    
+                    android:text="Maintain the last assigned speed and level, or minimum flight altitude if higher, for a period of 20 minutes following the failure to report the position over a compulsory reporting point."
+                    android:textSize="18dp"
+                    android:layout_weight="1" />
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="12dp">
+                <TextView
+                    
+                    
+                    android:text="8"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    
+                    
+                    android:text="Adjust level and speed in accordance with the filed flight plan."
+                    android:textSize="18dp"
+                    android:layout_weight="1" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    
+                    
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    
+                    
+                    android:text="►► Go to step 11"
+                    android:textSize="18dp"
+                    android:layout_weight="1" />
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="12dp">
+                <TextView
+                    
+                    
+                    android:text="9"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    
+                    
+                    android:text="Maintain the last assigned speed and level, or minimum flight altitude if higher, for a period of 7 minutes following:"
+                    android:textSize="18dp"
+                    android:layout_weight="1" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    
+                    
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    
+                    
+                    android:text="• The time the last assigned level or minimum flight altitude is reached"
+                    android:textSize="18dp"
+                    android:layout_weight="1" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    
+                    
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    
+                    
+                    android:text="• The time the transponder is set to Code 7600"
+                    android:textSize="18dp"
+                    android:layout_weight="1" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    
+                    
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    
+                    
+                    android:text="• The aircraft's failure to report its position over a compulsory reporting point"
+                    android:textSize="18dp"
+                    android:layout_weight="1" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    
+                    
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    
+                    
+                    android:text="whichever is later."
+                    android:textSize="18dp"
+                    android:layout_weight="1" />
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="12dp">
+                <TextView
+                    
+                    
+                    android:text="10"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    
+                    
+                    android:text="Adjust level and speed in accordance with the filed flight plan"
+                    android:textSize="18dp"
+                    android:layout_weight="1" />
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="12dp">
+                <TextView
+                    
+                    
+                    android:text="11"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    
+                    
+                    android:text="If being radar vectored or having been directed by ATC to proceed offset using RNAV without a specified limit, rejoin the current flight plan route no later than the next significant point, taking into consideration the applicable minimum flight altitude"
+                    android:textSize="18dp"
+                    android:layout_weight="1" />
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="12dp">
+                <TextView
+                    
+                    
+                    android:text="12"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    
+                    
+                    android:text="Proceed according to the current flight plan route to the appropriate designated navigation aid or fix serving the destination aerodrome"
+                    android:textSize="18dp"
+                    android:layout_weight="1" />
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="12dp">
+                <TextView
+                    
+                    
+                    android:text="13"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    
+                    
+                    android:text="Hold over this aid or fix until commencement of descent"
+                    android:textSize="18dp"
+                    android:layout_weight="1" />
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="12dp">
+                <TextView
+                    
+                    
+                    android:text="14"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    
+                    
+                    android:text="Choose one:"
+                    android:textSize="18dp"
+                    android:layout_weight="1" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    
+                    
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    
+                    
+                    android:text="◆ Expected approach time received and acknowledged:"
+                    android:textSize="18dp"
+                    android:layout_weight="1" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    
+                    
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    
+                    
+                    android:text="►► Go to step 15"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    
+                    
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    
+                    
+                    android:text="◆ Expected approach time NOT received and acknowledged:"
+                    android:textSize="18dp"
+                    android:layout_weight="1" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    
+                    
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    
+                    
+                    android:text="►► Go to step 16"
+                    android:textSize="18dp"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1" />
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="12dp">
+                <TextView
+                    
+                    
+                    android:text="15"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    
+                    
+                    android:text="Commence descent from the navigation aid or fix specified at, or as close as possible to, the expected approach time last received and acknowledged."
+                    android:textSize="18dp"
+                    android:layout_weight="1" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    
+                    
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    
+                    
+                    android:text="►► Go to step 17"
+                    android:textSize="18dp"
+                    android:layout_weight="1" />
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="12dp">
+                <TextView
+                    
+                    
+                    android:text="16"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    
+                    
+                    android:text="Commence descent from the navigation aid or fix specified at, or as close as possible to, the estimated time of arrival resulting from the current flight plan."
+                    android:textSize="18dp"
+                    android:layout_weight="1" />
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="12dp">
+                <TextView
+                    
+                    
+                    android:text="17"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    
+                    
+                    android:text="Complete a normal instrument approach procedure as specified for the designated navigation aid or fix."
+                    android:textSize="18dp"
+                    android:layout_weight="1" />
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="12dp">
+                <TextView
+                    
+                    
+                    android:text="18"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    
+                    
+                    android:text="Land, if possible, within thirty minutes after the estimated time of arrival or the last acknowledged expected approach time, whichever is later."
+                    android:textSize="18dp"
+                    android:layout_weight="1" />
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content">
+                <TextView
+                    
+                    
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    
+                    
+                    android:textSize="18dp"
+                    android:text="■ ■ ■ ■"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

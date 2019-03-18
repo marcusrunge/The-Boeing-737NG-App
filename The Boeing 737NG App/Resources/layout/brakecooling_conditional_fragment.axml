@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/brakeCoolingScrollView"
+        android:layout_marginTop="?android:attr/actionBarSize"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/brakeCoolingLinearLayout">
+            <GridLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/brakeCoolingEnvironmentGridLayout"
+                android:columnCount="2"
+                android:rowCount="4"
+                android:layout_gravity="center_horizontal">
+                <TextView
+                    android:text="Aircraft Mass in kg:"
+                    android:id="@+id/aircraftMassTextView"
+                    android:textSize="18dp"
+                    android:layout_gravity="right" />
+                <EditText
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:id="@+id/aircraftMassEditText"
+                    android:gravity="center"
+                    android:layout_width="96dp"
+                    android:layout_gravity="fill_horizontal"
+                    android:inputType="number"
+                    android:maxLength="6" />
+                <TextView
+                    android:text="Brakes on Speed in kts:"
+                    android:id="@+id/brakesOnSpeedTextView"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:textSize="18dp"
+                    android:layout_gravity="right" />
+                <EditText
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:id="@+id/brakesOnSpeedEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:gravity="center"
+                    android:maxLength="3"
+                    android:inputType="number" />
+                <TextView
+                    android:text="Pressure Altitude in ft:"
+                    android:id="@+id/pressureAltitudeTextView"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:textSize="18dp"
+                    android:layout_gravity="right" />
+                <EditText
+                    android:layout_row="2"
+                    android:layout_column="1"
+                    android:id="@+id/pressureAltitudeEditText"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:maxLength="5"
+                    android:inputType="number" />
+                <TextView
+                    android:layout_row="3"
+                    android:layout_column="0"
+                    android:text="Outside Air Temperature in °C:"
+                    android:id="@+id/outsideAirTemperatureTextView"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="right" />
+                <EditText
+                    android:layout_row="3"
+                    android:layout_column="1"
+                    android:id="@+id/outsideAirTemperatureEditText"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:inputType="number"
+                    android:maxLength="4" />
+            </GridLayout>
+            <android.support.v7.widget.SwitchCompat xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/brakeTypeSwitch"
+                android:textOn="Carbon"
+                android:text="Brake Type"
+                android:textOff="Steel"
+                android:showText="true"
+                android:textSize="18dp"
+                android:textColor="@color/blueGrey100"
+                android:theme="@style/BrakeTypeSwitchTheme"
+                app:showText="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp" />
+            <GridLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="1"
+                android:id="@+id/brakeCoolingAircraftConfigurationGridLayout"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp">
+                <android.support.v7.widget.SwitchCompat xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inFlightSwitch"
+                    android:textOn="Flight"
+                    android:text="Gear Down"
+                    android:textOff="Ground"
+                    android:showText="true"
+                    android:textSize="18dp"
+                    android:textColor="@color/blueGrey100"
+                    android:theme="@style/InFlightSwitchTheme"
+                    app:showText="true"
+                    android:layout_marginRight="6dp"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal" />
+                <android.support.v7.widget.SwitchCompat xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/reverseSwitch"
+                    android:textOn="Yes"
+                    android:text="Reverse"
+                    android:textOff="No"
+                    android:showText="true"
+                    android:textSize="18dp"
+                    android:textColor="@color/blueGrey100"
+                    android:theme="@style/ReverseSwitchTheme"
+                    app:showText="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_columnWeight="1" />
+            </GridLayout>
+            <TextView
+                android:text="Brake Setting (4=MAX, M=MAN, R=RTO)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:textSize="18dp"
+                android:layout_marginTop="12dp"
+                android:layout_gravity="center_horizontal" />
+            <RadioGroup
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/brakeLevelRadioGroup"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+                <RadioButton
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:checked="true"
+                    android:id="@+id/brakeLevel1RadioButton"
+                    android:textSize="18dp"
+                    android:textColor="@color/blueGrey100"
+                    android:tag="0" />
+                <RadioButton
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:id="@+id/brakeLevel2RadioButton"
+                    android:textSize="18dp"
+                    android:textColor="@color/blueGrey100"
+                    android:tag="1" />
+                <RadioButton
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:id="@+id/brakeLevel3RadioButton"
+                    android:textSize="18dp"
+                    android:textColor="@color/blueGrey100"
+                    android:tag="2" />
+                <RadioButton
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:id="@+id/brakeLevel4RadioButton"
+                    android:textSize="18dp"
+                    android:textColor="@color/blueGrey100"
+                    android:tag="3" />
+                <RadioButton
+                    android:layout_height="wrap_content"
+                    android:text="M"
+                    android:id="@+id/brakeLevel5RradioButton"
+                    android:textSize="18dp"
+                    android:textColor="@color/blueGrey100"
+                    android:tag="4" />
+                <RadioButton
+                    android:layout_height="wrap_content"
+                    android:text="R"
+                    android:id="@+id/brakeLevel6RadioButton"
+                    android:textSize="18dp"
+                    android:textColor="@color/blueGrey100"
+                    android:tag="5" />
+            </RadioGroup>
+            <TextView
+                android:text="Cooling Time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/brakeCoolingTimeTextView"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:layout_marginTop="12dp"
+                android:background="@xml/border" />
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:text="CLEAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clearBrakeCoolingButton"
+        android:textColor="@android:color/white"
+        android:background="@color/redA700"
+        android:drawableLeft="@drawable/ic_stat_clear"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp" />
+</LinearLayout>

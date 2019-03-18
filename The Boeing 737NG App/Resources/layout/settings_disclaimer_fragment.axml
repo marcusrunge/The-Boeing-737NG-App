@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <TextView
+        android:layout_marginTop="?android:attr/actionBarSize"
+        android:text="By using this app you accept that the publisher and author &quot;Marcus Runge&quot; is not responsible for any damage caused by incorrect use."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp" />
+    <TextView
+        android:layout_marginTop="12dp"
+        android:text="This app has been developed as a free service based on experience, best knowledge and practices from the author's 15 years Boeing 737 flying experience."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp" />
+    <TextView
+        android:layout_marginTop="12dp"
+        android:text="BOEING is a trademark of The Boeing Company."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp" />
+</LinearLayout>

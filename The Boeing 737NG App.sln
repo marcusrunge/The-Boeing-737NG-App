@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Boeing 737NG App", "The Boeing 737NG App\The Boeing 737NG App.csproj", "{1E2D730C-56A7-4D16-A742-58BEC46AAD7C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E2D730C-56A7-4D16-A742-58BEC46AAD7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E2D730C-56A7-4D16-A742-58BEC46AAD7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E2D730C-56A7-4D16-A742-58BEC46AAD7C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1E2D730C-56A7-4D16-A742-58BEC46AAD7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E2D730C-56A7-4D16-A742-58BEC46AAD7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E2D730C-56A7-4D16-A742-58BEC46AAD7C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3F357C0A-A9FC-48E3-85C4-7DB8419E5908}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://marcusrunge.visualstudio.com/
+		SccProjectUniqueName0 = The\u0020Boeing\u0020737NG\u0020App\\The\u0020Boeing\u0020737NG\u0020App.csproj
+		SccProjectName0 = The\u0020Boeing\u0020737NG\u0020App
+		SccLocalPath0 = The\u0020Boeing\u0020737NG\u0020App
+		SccLocalPath1 = .
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="@color/blueGrey700">
+    <GridLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="1"
+        android:columnCount="2"
+        android:id="@+id/circuitBreakerPanelMainGridLayout">
+        <GridLayout
+            android:minWidth="38px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/circuitBreakerPanelRowIdGridLayout"
+            android:layout_column="0"
+            android:layout_marginTop="19dp" />
+        <HorizontalScrollView
+            android:layout_weight="1"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:paddingRight="26px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1">
+            <GridLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/circuitBreakerPanelGridLayout" />
+        </HorizontalScrollView>
+    </GridLayout>
+</LinearLayout>

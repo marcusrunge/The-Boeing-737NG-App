@@ -1,0 +1,1019 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <ScrollView
+        android:fillViewport="true"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:gravity="center"
+                android:background="@color/blueGrey100"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Maximum Tire Speed"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="196kts"
+                    android:background="@color/blueGrey700"
+                    android:layout_margin="1dp"
+                    android:paddingRight="3dp"
+                    android:paddingLeft="3dp"
+                    android:textSize="18dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="24dp"
+                android:background="@color/blueGrey100"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:background="@color/blueGrey700"
+                    android:text="Maximum V Speed (Vmo)"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:paddingRight="3dp"
+                    android:paddingLeft="3dp" />
+                <TextView
+                    android:background="@color/blueGrey700"
+                    android:text="340 knots (observe Vmo pointer and gear/flap placards"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginLeft="1dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:background="@color/blueGrey100"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Maximum Mach Operating Speed (Mmo)"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text=".82 Mach"
+                    android:background="@color/blueGrey700"
+                    android:paddingRight="3dp"
+                    android:paddingLeft="3dp"
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="1dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:background="@color/blueGrey100"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Maximum Turbulent Air Speed"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:textSize="18dp"
+                    android:layout_marginBottom="1dp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="280K/.76M"
+                    android:background="@color/blueGrey700"
+                    android:paddingRight="3dp"
+                    android:paddingLeft="3dp"
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:layout_margin="1dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:background="@color/blueGrey100"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="24dp">
+                <TextView
+                    android:background="@color/blueGrey700"
+                    android:text="Maximum Operating Altitude"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:paddingRight="3dp"
+                    android:paddingLeft="3dp" />
+                <TextView
+                    android:background="@color/blueGrey700"
+                    android:text="41,000 ft"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginLeft="1dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:background="@color/blueGrey100"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Maximum Takeoff and Landing Altitude"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:textSize="18dp"
+                    android:layout_marginBottom="1dp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="8,400 ft"
+                    android:background="@color/blueGrey700"
+                    android:paddingRight="3dp"
+                    android:paddingLeft="3dp"
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:layout_margin="1dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginTop="24dp"
+                android:background="@color/blueGrey100"
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Maximum flight operating latitude"
+                    android:layout_width="fill_parent"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:gravity="center_horizontal"
+                    android:textSize="18dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_height="fill_parent" />
+                <TextView
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:text="82° North and 82° South except for the region between"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:paddingRight="3dp"
+                    android:paddingLeft="3dp"
+                    android:textSize="18dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:background="@color/blueGrey100"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:background="@color/blueGrey700"
+                    android:text="80° West and 130° West longitude"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp" />
+                <TextView
+                    android:background="@color/blueGrey700"
+                    android:text="70° North"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginLeft="1dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:background="@color/blueGrey100"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="120° West and 160° West longitude"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="60° South"
+                    android:background="@color/blueGrey700"
+                    android:layout_margin="1dp"
+                    android:paddingRight="3dp"
+                    android:paddingLeft="3dp"
+                    android:textSize="18dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginTop="24dp"
+                android:background="@color/blueGrey100"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Max difference between Captain and F/O"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:textSize="18dp"
+                    android:layout_marginRight="1dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:background="@color/blueGrey100"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Sea level to 5,000 ft"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="50 ft"
+                    android:background="@color/blueGrey700"
+                    android:paddingRight="3dp"
+                    android:paddingLeft="3dp"
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="1dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:background="@color/blueGrey100"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:background="@color/blueGrey700"
+                    android:text="Field elevation to 5,000 ft"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp" />
+                <TextView
+                    android:background="@color/blueGrey700"
+                    android:text="75 ft"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginLeft="1dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:background="@color/blueGrey100"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="5,001 to 10,000 ft"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="60 ft"
+                    android:background="@color/blueGrey700"
+                    android:layout_margin="1dp"
+                    android:paddingRight="3dp"
+                    android:paddingLeft="3dp"
+                    android:textSize="18dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginTop="24dp"
+                android:background="@color/blueGrey100"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Maximum cabin differential pressure"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="9.1 psi"
+                    android:background="@color/blueGrey700"
+                    android:layout_margin="1dp"
+                    android:paddingRight="3dp"
+                    android:paddingLeft="3dp"
+                    android:textSize="18dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="24dp"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Use of aileron trim with the autopilot enganged is prohibited."
+                android:background="#BFC00000"
+                android:layout_margin="1dp"
+                android:paddingRight="3dp"
+                android:paddingLeft="3dp"
+                android:textSize="18dp"
+                android:gravity="center" />
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginTop="24dp"
+                android:background="@color/blueGrey100"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Autopilot minimum engagement height"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="400 ft AGL"
+                    android:background="@color/blueGrey700"
+                    android:paddingRight="3dp"
+                    android:paddingLeft="3dp"
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="1dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:background="@color/blueGrey100"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Single channel autopilot operation during approach"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Shall not remain engaged below 50 ft AGL"
+                    android:background="@color/blueGrey700"
+                    android:layout_margin="1dp"
+                    android:paddingRight="3dp"
+                    android:paddingLeft="3dp"
+                    android:textSize="18dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginTop="24dp"
+                android:background="@color/blueGrey100"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Maximum glideslope angle for autoland"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="3.25 degrees"
+                    android:background="@color/blueGrey700"
+                    android:paddingRight="3dp"
+                    android:paddingLeft="3dp"
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="1dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:background="@color/blueGrey100"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="minimum glideslope angle for autoland"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="2.5 degrees"
+                    android:background="@color/blueGrey700"
+                    android:layout_margin="1dp"
+                    android:paddingRight="3dp"
+                    android:paddingLeft="3dp"
+                    android:textSize="18dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginTop="24dp"
+                android:background="@color/blueGrey100"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Autoland capability"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Flaps 30 or 40 and both engines operative"
+                    android:background="@color/blueGrey700"
+                    android:layout_margin="1dp"
+                    android:paddingRight="3dp"
+                    android:paddingLeft="3dp"
+                    android:textSize="18dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginTop="24dp"
+                android:background="@color/blueGrey100"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="APU"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:textSize="18dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:background="@color/blueGrey100"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Bleed + electrical load inflight"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="max alt 10,000 ft"
+                    android:background="@color/blueGrey700"
+                    android:paddingRight="3dp"
+                    android:paddingLeft="3dp"
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="1dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:background="@color/blueGrey100"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:background="@color/blueGrey700"
+                    android:text="Bleed + electrical load on ground"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp" />
+                <TextView
+                    android:background="@color/blueGrey700"
+                    android:text="max alt 15,000 ft"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginLeft="1dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:background="@color/blueGrey100"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="APU bleed"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="max alt 17,000 ft"
+                    android:background="@color/blueGrey700"
+                    android:paddingRight="3dp"
+                    android:paddingLeft="3dp"
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="1dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:background="@color/blueGrey100"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="APU electrical load"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="max alt 41,000 ft"
+                    android:background="@color/blueGrey700"
+                    android:layout_margin="1dp"
+                    android:paddingRight="3dp"
+                    android:paddingLeft="3dp"
+                    android:textSize="18dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginTop="24dp"
+                android:background="@color/blueGrey100"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Max flap extension altitude"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="20,000 ft"
+                    android:background="@color/blueGrey700"
+                    android:layout_margin="1dp"
+                    android:paddingRight="3dp"
+                    android:paddingLeft="3dp"
+                    android:textSize="18dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Holding in icing conditions with flaps extended is prohibited."
+                android:background="#BFC00000"
+                android:layout_margin="1dp"
+                android:paddingRight="3dp"
+                android:paddingLeft="3dp"
+                android:textSize="18dp"
+                android:gravity="center" />
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="24dp" />
+            <TextView
+                android:layout_marginTop="24dp"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Do not deploy the speedbrakes in flight at radio altitudes less than 1,000 feet"
+                android:background="#BFFFCF00"
+                android:layout_margin="1dp"
+                android:paddingRight="3dp"
+                android:paddingLeft="3dp"
+                android:textSize="18dp"
+                android:gravity="center" />
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="24dp" />
+            <TextView
+                android:layout_marginTop="24dp"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Do not operate the weather radar in a hangar or within 50 feet of any personnel or a fuel spill."
+                android:background="#BFFFCF00"
+                android:layout_margin="1dp"
+                android:paddingRight="3dp"
+                android:paddingLeft="3dp"
+                android:textSize="18dp"
+                android:gravity="center" />
+            <LinearLayout
+                android:gravity="center"
+                android:background="@color/blueGrey100"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Maximum tank fuel temperature"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="49°C"
+                    android:background="@color/blueGrey700"
+                    android:paddingRight="3dp"
+                    android:paddingLeft="3dp"
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="1dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:background="@color/blueGrey100"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:background="@color/blueGrey700"
+                    android:text="Minimum tank fuel temperature prior to takeoff and inflight"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp" />
+                <TextView
+                    android:background="@color/blueGrey700"
+                    android:text="- 43°C, or 3°C above the fuel freezing point temperature, whichever is higher"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginLeft="1dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:background="@color/blueGrey100"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Lateral imbalance between main tanks 1 and 2"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="scheduled to be zero"
+                    android:background="@color/blueGrey700"
+                    android:paddingRight="3dp"
+                    android:paddingLeft="3dp"
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="1dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:background="@color/blueGrey100"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Random fuel imbalance for taxi, takeoff, flight or landing"
+                    android:background="@color/blueGrey700"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="must not exceed 453 kgs"
+                    android:background="@color/blueGrey700"
+                    android:paddingRight="3dp"
+                    android:paddingLeft="3dp"
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="1dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:background="@color/blueGrey100"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Main tanks 1 and 2 must be full if center tank contains more than 453 kgs."
+                    android:background="@color/blueGrey700"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:textSize="18dp"
+                    android:layout_margin="1dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
