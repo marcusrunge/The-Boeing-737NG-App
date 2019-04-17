@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.marcusrunge.The_Boeing_737NG_App" android:versionCode="16" android:versionName="1.1.8">
-	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28" />
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.marcusrunge.The_Boeing_737NG_App" android:versionCode="16" android:versionName="1.1.9">
+	<uses-sdk android:minSdkVersion="21" />
 	<application android:label="@string/app_name" android:icon="@drawable/ic_launcher" android:theme="@style/Theme.BoeingTheme"></application>
 </manifest>
