@@ -203,10 +203,13 @@ namespace The_Boeing_737NG_App
 			global::Com.Syncfusion.Charts.Resource.String.q = global::The_Boeing_737NG_App.Resource.String.q;
 			global::Com.Syncfusion.Charts.Resource.String.quarter = global::The_Boeing_737NG_App.Resource.String.quarter;
 			global::Com.Syncfusion.Charts.Resource.String.sfchart_close_label = global::The_Boeing_737NG_App.Resource.String.sfchart_close_label;
+			global::Com.Syncfusion.Charts.Resource.String.sfchart_decrease_label = global::The_Boeing_737NG_App.Resource.String.sfchart_decrease_label;
 			global::Com.Syncfusion.Charts.Resource.String.sfchart_high_label = global::The_Boeing_737NG_App.Resource.String.sfchart_high_label;
+			global::Com.Syncfusion.Charts.Resource.String.sfchart_increase_label = global::The_Boeing_737NG_App.Resource.String.sfchart_increase_label;
 			global::Com.Syncfusion.Charts.Resource.String.sfchart_low_label = global::The_Boeing_737NG_App.Resource.String.sfchart_low_label;
 			global::Com.Syncfusion.Charts.Resource.String.sfchart_open_label = global::The_Boeing_737NG_App.Resource.String.sfchart_open_label;
 			global::Com.Syncfusion.Charts.Resource.String.sfchart_others_label = global::The_Boeing_737NG_App.Resource.String.sfchart_others_label;
+			global::Com.Syncfusion.Charts.Resource.String.sfchart_total_label = global::The_Boeing_737NG_App.Resource.String.sfchart_total_label;
 			global::Com.Syncfusion.Charts.Resource.String.w = global::The_Boeing_737NG_App.Resource.String.w;
 			global::Com.Syncfusion.Charts.Resource.String.week = global::The_Boeing_737NG_App.Resource.String.week;
 			global::Com.Syncfusion.Charts.Resource.Styleable.SfChart = global::The_Boeing_737NG_App.Resource.Styleable.SfChart;
@@ -5990,20 +5993,20 @@ namespace The_Boeing_737NG_App
 			// aapt resource value: 0x7f0d001a
 			public const int abc_toolbar_collapse_description = 2131558426;
 			
-			// aapt resource value: 0x7f0d003f
-			public const int app_name = 2131558463;
+			// aapt resource value: 0x7f0d0042
+			public const int app_name = 2131558466;
 			
 			// aapt resource value: 0x7f0d0028
 			public const int appbar_scrolling_view_behavior = 2131558440;
 			
-			// aapt resource value: 0x7f0d0045
-			public const int baggage_distribution_title = 2131558469;
+			// aapt resource value: 0x7f0d0048
+			public const int baggage_distribution_title = 2131558472;
 			
 			// aapt resource value: 0x7f0d0029
 			public const int bottom_sheet_behavior = 2131558441;
 			
-			// aapt resource value: 0x7f0d0046
-			public const int brake_cooling_title = 2131558470;
+			// aapt resource value: 0x7f0d0049
+			public const int brake_cooling_title = 2131558473;
 			
 			// aapt resource value: 0x7f0d002a
 			public const int character_counter_content_description = 2131558442;
@@ -6011,17 +6014,17 @@ namespace The_Boeing_737NG_App
 			// aapt resource value: 0x7f0d002b
 			public const int character_counter_pattern = 2131558443;
 			
-			// aapt resource value: 0x7f0d0048
-			public const int checklists_title = 2131558472;
+			// aapt resource value: 0x7f0d004b
+			public const int checklists_title = 2131558475;
 			
-			// aapt resource value: 0x7f0d0047
-			public const int circuit_breaker_title = 2131558471;
+			// aapt resource value: 0x7f0d004a
+			public const int circuit_breaker_title = 2131558474;
 			
-			// aapt resource value: 0x7f0d0041
-			public const int drawer_close = 2131558465;
+			// aapt resource value: 0x7f0d0044
+			public const int drawer_close = 2131558468;
 			
-			// aapt resource value: 0x7f0d0040
-			public const int drawer_open = 2131558464;
+			// aapt resource value: 0x7f0d0043
+			public const int drawer_open = 2131558467;
 			
 			// aapt resource value: 0x7f0d002c
 			public const int fab_transformation_scrim_behavior = 2131558444;
@@ -6029,23 +6032,23 @@ namespace The_Boeing_737NG_App
 			// aapt resource value: 0x7f0d002d
 			public const int fab_transformation_sheet_behavior = 2131558445;
 			
-			// aapt resource value: 0x7f0d0044
-			public const int fuel_check_title = 2131558468;
+			// aapt resource value: 0x7f0d0047
+			public const int fuel_check_title = 2131558471;
 			
-			// aapt resource value: 0x7f0d0043
-			public const int fuel_order_title = 2131558467;
+			// aapt resource value: 0x7f0d0046
+			public const int fuel_order_title = 2131558470;
 			
 			// aapt resource value: 0x7f0d002e
 			public const int hide_bottom_view_on_scroll_behavior = 2131558446;
 			
-			// aapt resource value: 0x7f0d004a
-			public const int limitations_title = 2131558474;
+			// aapt resource value: 0x7f0d004d
+			public const int limitations_title = 2131558477;
 			
-			// aapt resource value: 0x7f0d0049
-			public const int manouvers_title = 2131558473;
+			// aapt resource value: 0x7f0d004c
+			public const int manouvers_title = 2131558476;
 			
-			// aapt resource value: 0x7f0d0042
-			public const int menu_refresh = 2131558466;
+			// aapt resource value: 0x7f0d0045
+			public const int menu_refresh = 2131558469;
 			
 			// aapt resource value: 0x7f0d002f
 			public const int mtrl_chip_close_icon_content_description = 2131558447;
@@ -6074,14 +6077,20 @@ namespace The_Boeing_737NG_App
 			// aapt resource value: 0x7f0d001b
 			public const int search_menu_title = 2131558427;
 			
-			// aapt resource value: 0x7f0d004b
-			public const int settings_title = 2131558475;
+			// aapt resource value: 0x7f0d004e
+			public const int settings_title = 2131558478;
 			
 			// aapt resource value: 0x7f0d003d
 			public const int sfchart_close_label = 2131558461;
 			
+			// aapt resource value: 0x7f0d0040
+			public const int sfchart_decrease_label = 2131558464;
+			
 			// aapt resource value: 0x7f0d003a
 			public const int sfchart_high_label = 2131558458;
+			
+			// aapt resource value: 0x7f0d003f
+			public const int sfchart_increase_label = 2131558463;
 			
 			// aapt resource value: 0x7f0d003b
 			public const int sfchart_low_label = 2131558459;
@@ -6091,6 +6100,9 @@ namespace The_Boeing_737NG_App
 			
 			// aapt resource value: 0x7f0d003e
 			public const int sfchart_others_label = 2131558462;
+			
+			// aapt resource value: 0x7f0d0041
+			public const int sfchart_total_label = 2131558465;
 			
 			// aapt resource value: 0x7f0d0035
 			public const int status_bar_notification_info_overflow = 2131558453;
