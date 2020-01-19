@@ -31,7 +31,7 @@ namespace The_Boeing_737NG_App
         {
             base.OnCreate(savedInstanceState);
             SetTheme(Resource.Style.Theme_BoeingTheme);
-            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MTI5NzY0QDMxMzcyZTMyMmUzMFJ0b3pSbTlIRnFRUThrY2VTd3IwMU16TDlKTFBPNG9qYU5jaXBHbFVkTnc9");            
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MTk4NjYyQDMxMzcyZTM0MmUzMEdjdGlBeVVnWTIvSFdRenV3K2FjOHlkbGlucHJOMXVVWGIxMTRHYSt5R289");            
             //int uiOptions = (int)Window.DecorView.SystemUiVisibility;
             //uiOptions = (int)SystemUiFlags.HideNavigation | (int)SystemUiFlags.Fullscreen;
             //Window.DecorView.SystemUiVisibility = (StatusBarVisibility)uiOptions;
