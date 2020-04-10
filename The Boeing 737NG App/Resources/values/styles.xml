@@ -23,7 +23,7 @@
     <item name="spinBars">true</item>
   </style>
 
-  <style name="Theme.BoeingTheme.ActionBar" parent="style/Widget.AppCompat.Light.ActionBar.Solid">    
+  <style name="Theme.BoeingTheme.ActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">    
     <item name="elevation">0dp</item>
   </style>
   <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
