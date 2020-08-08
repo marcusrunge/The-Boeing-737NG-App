@@ -18,7 +18,7 @@ namespace The_Boeing_737NG_App.Fragments
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            _eventService.ForceFragmentBackStackEvent += (s, e) => 
+            _eventService.ForceFragmentBackStackEvent += (s, e) =>
             {
                 if (FragmentManager != null && FragmentManager.Fragments.Count > 0) FragmentManager.PopBackStack();
             };

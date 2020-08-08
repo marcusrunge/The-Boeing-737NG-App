@@ -1,6 +1,6 @@
 ﻿
-using Android.Support.V4.App;
 using Android.OS;
+using Android.Support.V4.App;
 using Android.Views;
 
 namespace The_Boeing_737NG_App.Fragments
@@ -16,10 +16,10 @@ namespace The_Boeing_737NG_App.Fragments
         {
             var view = inflater.Inflate(Resource.Layout.checklists_quickaction_fragment, container, false);
             var quickActionTitlesFragmentInstance = QuickActionTitlesFragment.NewInstance();
-            var fragmentTransaction = FragmentManager.BeginTransaction();                        
+            var fragmentTransaction = FragmentManager.BeginTransaction();
             fragmentTransaction.Add(Resource.Id.quickactionContentFrameLayout, quickActionTitlesFragmentInstance);
             fragmentTransaction.SetTransition(4099);
-            fragmentTransaction.Commit();    
+            fragmentTransaction.Commit();
             return view;
         }
     }

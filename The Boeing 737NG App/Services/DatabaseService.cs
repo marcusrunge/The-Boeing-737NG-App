@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using SQLite;
+﻿using SQLite;
+using System.Collections.Generic;
 
 namespace The_Boeing_737NG_App.Services
 {
@@ -16,7 +16,7 @@ namespace The_Boeing_737NG_App.Services
     {
         SQLiteConnection _sQLiteConnection;
 
-        public static DatabaseService Instance(string filePath) => new DatabaseService(filePath);              
+        public static DatabaseService Instance(string filePath) => new DatabaseService(filePath);
 
         public DatabaseService(string filePath) => _sQLiteConnection = new SQLiteConnection(filePath);
 

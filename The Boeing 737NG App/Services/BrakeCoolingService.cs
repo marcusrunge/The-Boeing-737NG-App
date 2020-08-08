@@ -34,7 +34,7 @@ namespace The_Boeing_737NG_App.Services
 
         public string BrakeCoolingMessage(bool steel, bool flight, string brakeTemperatureIndication)
         {
-            var indexOfPoint = brakeTemperatureIndication.IndexOf('.');            
+            var indexOfPoint = brakeTemperatureIndication.IndexOf('.');
             if (indexOfPoint > 0) brakeTemperatureIndication = brakeTemperatureIndication.Replace('.', ',');
             if (Double.TryParse(brakeTemperatureIndication, out double parsedBrakeTemperatureIndication))
             {

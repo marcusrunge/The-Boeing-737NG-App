@@ -1,8 +1,8 @@
-﻿using System;
-using Android.Graphics;
+﻿using Android.Graphics;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
+using System;
 
 namespace The_Boeing_737NG_App.Fragments
 {
@@ -26,7 +26,7 @@ namespace The_Boeing_737NG_App.Fragments
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
-            base.OnCreate(savedInstanceState);                        
+            base.OnCreate(savedInstanceState);
             Dialog.Window.RequestFeature(WindowFeatures.NoTitle);
             var panelLayout = GetPanelLayout();
             var view = inflater.Inflate(Resource.Layout.circuit_breaker_panel_fragment, container, false);
@@ -36,7 +36,7 @@ namespace The_Boeing_737NG_App.Fragments
             circuitBreakerPanelGridLayout.RowCount = panelLayout.Item2 + 1;
             circuitBreakerPanelGridLayout.ColumnCount = panelLayout.Item1;
             Tuple<int, int> tuple = GetSelectedCircuitBreaker();
-            bool valid = (tuple.Item1 > -1 && tuple.Item2 > -1);            
+            bool valid = (tuple.Item1 > -1 && tuple.Item2 > -1);
 
             for (int i = 0; i < panelLayout.Item2 + 1; i++)
             {
@@ -53,7 +53,7 @@ namespace The_Boeing_737NG_App.Fragments
                         columNumberLayoutParams.SetGravity(GravityFlags.CenterHorizontal);
                         columNumber.LayoutParameters = columNumberLayoutParams;
                         circuitBreakerPanelGridLayout.AddView(columNumber);
-                    }                    
+                    }
                     else if (i != 0)
                     {
                         ImageView imageView = new ImageView(Context);
@@ -67,7 +67,7 @@ namespace The_Boeing_737NG_App.Fragments
                 }
             }
 
-            circuitBreakerPanelGridLayout.GetChildAt((panelLayout.Item1 * panelLayout.Item2) - 1).LayoutChange += (s, e) => 
+            circuitBreakerPanelGridLayout.GetChildAt((panelLayout.Item1 * panelLayout.Item2) - 1).LayoutChange += (s, e) =>
             {
                 for (int i = 0; i < panelLayout.Item2 + 1; i++)
                 {
@@ -75,11 +75,11 @@ namespace The_Boeing_737NG_App.Fragments
                     {
                         TextView rowLetter = new TextView(Context)
                         {
-                            Text = rowLetters[i - 1]                            
+                            Text = rowLetters[i - 1]
                         };
                         GridLayout.LayoutParams rowLetterLayoutParams = new GridLayout.LayoutParams() { ColumnSpec = GridLayout.InvokeSpec(0), RowSpec = GridLayout.InvokeSpec(i) };
                         rowLetterLayoutParams.SetGravity(GravityFlags.Center);
-                        rowLetter.SetTextColor(new Color(Android.Support.V4.Content.ContextCompat.GetColor(Context, Resource.Color.blueGrey100)));                        
+                        rowLetter.SetTextColor(new Color(Android.Support.V4.Content.ContextCompat.GetColor(Context, Resource.Color.blueGrey100)));
                         rowLetterLayoutParams.Height = (s as View).Height;
                         rowLetter.SetTextSize(Android.Util.ComplexUnitType.Sp, 14);
                         rowLetter.LayoutParameters = rowLetterLayoutParams;
@@ -90,7 +90,7 @@ namespace The_Boeing_737NG_App.Fragments
             };
 
             return view;
-        }        
+        }
 
         private Tuple<int, int> GetPanelLayout()
         {

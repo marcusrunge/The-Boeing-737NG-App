@@ -1,9 +1,8 @@
-﻿using System;
+﻿using Android.App;
+using Android.Content;
+using System;
 using System.Collections.Generic;
 using System.IO;
-
-using Android.App;
-using Android.Content;
 
 namespace The_Boeing_737NG_App.Services
 {
@@ -46,7 +45,7 @@ namespace The_Boeing_737NG_App.Services
             else if (typeof(T) == typeof(int)) return (T)(object)_sharedPreferences.GetInt(key, int.MinValue);
             else if (typeof(T) == typeof(long)) return (T)(object)_sharedPreferences.GetFloat(key, long.MinValue);
             else if (typeof(T) == typeof(ICollection<string>)) return (T)(object)_sharedPreferences.GetStringSet(key, null);
-            else return (T)(object) _sharedPreferences.GetString(key, String.Empty);
+            else return (T)(object)_sharedPreferences.GetString(key, String.Empty);
         }
 
         /// <summary>    

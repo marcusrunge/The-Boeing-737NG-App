@@ -14,7 +14,7 @@ namespace The_Boeing_737NG_App.Services
         {
             var emailIntent = new Intent(Intent.ActionSend);
             emailIntent.PutExtra(Intent.ExtraSubject, $"Fuel Order for Flight {flightNumber} on {flightDate} to {destination}");
-            emailIntent.PutExtra(Intent.ExtraText, 
+            emailIntent.PutExtra(Intent.ExtraText,
                 $"Flight No ▶ {flightNumber}" + System.Environment.NewLine +
                 $"Date ▶ {flightDate}" + System.Environment.NewLine +
                 $"Departure ▶ {departure}" + System.Environment.NewLine +

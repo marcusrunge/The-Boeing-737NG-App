@@ -30,12 +30,12 @@ namespace The_Boeing_737NG_App.Fragments
             var view = inflater.Inflate(Resource.Layout.fuel_order_fragment, null);
             viewPager = view.FindViewById<ViewPager>(Resource.Id.fuelOrderViewPager);
             var tabLayout = view.FindViewById<TabLayout>(Resource.Id.fuelOrderTabLayout);
-            fuelOrderTabsAdapter = new FuelOrderTabsAdapter(view.Context, FragmentManager);            
+            fuelOrderTabsAdapter = new FuelOrderTabsAdapter(view.Context, FragmentManager);
             viewPager.Adapter = fuelOrderTabsAdapter;
             tabLayout.SetupWithViewPager(viewPager);
             //view.FindViewById<AppBarLayout>(Resource.Id.fuelOrderAppBarLayout).Click+=(s,e)=> view.PerformHapticFeedback(FeedbackConstants.VirtualKey, FeedbackFlags.IgnoreGlobalSetting);
             return view;
-        }        
+        }
     }
 
     class FuelOrderTabsAdapter : FragmentStatePagerAdapter
@@ -72,6 +72,6 @@ namespace The_Boeing_737NG_App.Fragments
         public override int GetItemPosition(Java.Lang.Object frag)
         {
             return PositionNone;
-        }        
+        }
     }
 }

@@ -1,16 +1,16 @@
 ﻿
-using Android.Support.V4.App;
 using Android.OS;
+using Android.Support.V4.App;
 using Android.Views;
 
 namespace The_Boeing_737NG_App.Fragments
 {
     public class ManouversFragment : Fragment
     {
-        
+
         public override void OnCreate(Bundle savedInstanceState)
         {
-            base.OnCreate(savedInstanceState);            
+            base.OnCreate(savedInstanceState);
         }
         public static ManouversFragment NewInstance() => new ManouversFragment { Arguments = new Bundle() };
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
@@ -22,5 +22,5 @@ namespace The_Boeing_737NG_App.Fragments
             fragmentTransaction.Commit();
             return view;
         }
-    }    
+    }
 }

@@ -1,10 +1,9 @@
-﻿using System;
-
-using Android.App;
+﻿using Android.App;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
 using CommonServiceLocator;
+using System;
 using The_Boeing_737NG_App.Services;
 
 namespace The_Boeing_737NG_App.Fragments
@@ -57,20 +56,20 @@ namespace The_Boeing_737NG_App.Fragments
 
             _remainingFuelEditText.Text = _settingsService.GetSetting<string>("RemainingFuel");
             _remainingFuelEditText.TextChanged += (s, e) =>
-            {                
+            {
                 _settingsService.SaveSetting("RemainingFuel", e.Text.ToString());
             };
-            
+
             _calculatedBlockFuelEditText.TextChanged += (s, e) =>
-            {   
+            {
                 _fuelUpliftService.CalculateFuelUplift(_remainingFuelEditText.Text, e.Text.ToString(), _massUnit.Equals("lbs"), _volumeUnit.Equals("USG"), _fuelDensity);
                 _calculatedFuelUpliftTextView.Text = _fuelUpliftService.CalculatedFuelUplift;
                 _settingsService.SaveSetting("CalculatedBlockFuel", e.Text.ToString());
             };
             _calculatedBlockFuelEditText.Text = _settingsService.GetSetting<string>("CalculatedBlockFuel");
 
-            
-            _actualBlockFuelEditText.TextChanged += (s, e) => 
+
+            _actualBlockFuelEditText.TextChanged += (s, e) =>
             {
                 _fuelUpliftService.CalculateExpectedFuelUplift(_remainingFuelEditText.Text, e.Text.ToString(), _massUnit.Equals("lbs"), _volumeUnit.Equals("USG"), _fuelDensity);
                 _expectedFuelUpliftTextView.Text = _fuelUpliftService.ExpectedFuelUplift;
@@ -78,8 +77,8 @@ namespace The_Boeing_737NG_App.Fragments
             };
             _actualBlockFuelEditText.Text = _settingsService.GetSetting<string>("ActualBlockFuel");
 
-            
-            _actualFuelUpliftEditText.TextChanged += (s, e) => 
+
+            _actualFuelUpliftEditText.TextChanged += (s, e) =>
             {
                 _fuelUpliftService.CalculateFuelUpliftDifference(_remainingFuelEditText.Text, _actualBlockFuelEditText.Text, e.Text.ToString(), _massUnit.Equals("lbs"), _volumeUnit.Equals("USG"), _fuelDensity);
                 _fuelUpliftDifferenceTextView.Text = _fuelUpliftService.FuelUpliftDifference;
@@ -87,7 +86,7 @@ namespace The_Boeing_737NG_App.Fragments
             };
             _actualFuelUpliftEditText.Text = _settingsService.GetSetting<string>("ActualFuelUplift");
 
-            view.FindViewById<Button>(Resource.Id.clearFuelUpliftButton).Click += (s, e) => 
+            view.FindViewById<Button>(Resource.Id.clearFuelUpliftButton).Click += (s, e) =>
             {
                 view.PerformHapticFeedback(FeedbackConstants.VirtualKey, FeedbackFlags.IgnoreGlobalSetting);
                 //view.PlaySoundEffect(SoundEffects.Click);
@@ -135,6 +134,6 @@ namespace The_Boeing_737NG_App.Fragments
         {
             if (_volumeUnit.Equals("ltr")) return Math.Round((775 + (double)progress * (100 / 65)) / 1000, 3);
             else return Math.Round((775 + (double)progress * (100 / 65)) * 8.345404452 / 1000, 3);
-        }        
+        }
     }
 }

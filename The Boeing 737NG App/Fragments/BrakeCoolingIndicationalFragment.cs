@@ -13,7 +13,7 @@ namespace The_Boeing_737NG_App.Fragments
         IBrakeCoolingService _brakeCoolingService;
         TextView _indicationalBrakeCoolingTimeTextView;
         EditText _brakeTemperatureValueEditText;
-        SwitchCompat 
+        SwitchCompat
             _indicationalBrakeTypeSwitch,
             _indicationalInFlightSwitch;
 

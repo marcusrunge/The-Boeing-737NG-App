@@ -1,10 +1,9 @@
-﻿using System;
-
-using Android.App;
+﻿using Android.App;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
 using CommonServiceLocator;
+using System;
 using The_Boeing_737NG_App.Services;
 
 namespace The_Boeing_737NG_App.Fragments

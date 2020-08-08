@@ -1,9 +1,8 @@
-﻿using System;
-
-using Android.App;
+﻿using Android.App;
 using Android.OS;
 using Android.Util;
 using Android.Widget;
+using System;
 
 namespace The_Boeing_737NG_App.Fragments
 {

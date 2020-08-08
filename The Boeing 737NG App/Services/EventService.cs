@@ -8,7 +8,7 @@ namespace The_Boeing_737NG_App.Services
         event EventHandler DatabaseUpdatedEvent;
         event EventHandler ForceFragmentBackStackEvent;
         void OnProgressChangedEvent(ProgressChangedEventArgs eventArgs);
-        void  OnDatabaseUpdatedEvent(EventArgs eventArgs);
+        void OnDatabaseUpdatedEvent(EventArgs eventArgs);
         void OnForceFragmentBackStackEvent(EventArgs eventArgs);
     }
     public class EventService : IEventService
@@ -40,5 +40,5 @@ namespace The_Boeing_737NG_App.Services
         }
     }
 
-    public enum UpdateType { Add, Update, Delete};
+    public enum UpdateType { Add, Update, Delete };
 }

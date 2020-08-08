@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using Android.Graphics;
+﻿using Android.Graphics;
 using Android.OS;
 using Android.Support.V7.Widget;
 using Android.Views;
 using Android.Widget;
 using CommonServiceLocator;
+using System;
+using System.Collections.Generic;
 using The_Boeing_737NG_App.Models;
 using The_Boeing_737NG_App.Services;
 
@@ -65,7 +65,7 @@ namespace The_Boeing_737NG_App.Fragments
             {
                 _actionModeItemView = (e.Item1 as LinearLayout);
                 _actionModeItemView.SetBackgroundColor(Color.ParseColor("#80ff0000"));
-                _actionModeItemView.PerformHapticFeedback(FeedbackConstants.LongPress, FeedbackFlags.IgnoreGlobalSetting);                
+                _actionModeItemView.PerformHapticFeedback(FeedbackConstants.LongPress, FeedbackFlags.IgnoreGlobalSetting);
                 _actionModeItemId = e.Item2;
                 if (_actionMode != null) return;
                 fuelcheckListToolbar.Visibility = ViewStates.Gone;
@@ -114,7 +114,7 @@ namespace The_Boeing_737NG_App.Fragments
         {
             return false;
         }
-    }    
+    }
 
     class FuelChecksRecyclerViewAdapter : RecyclerView.Adapter
     {
@@ -127,7 +127,7 @@ namespace The_Boeing_737NG_App.Fragments
         {
             ClickedItem = -1;
             _fuelCheckListList = fuelCheckList;
-            ItemLongClick += (s, e) => 
+            ItemLongClick += (s, e) =>
             {
                 if (_previousView != null) _previousView.SetBackgroundColor(Color.Transparent);
                 ClickedItem = e.Item2;

@@ -1,17 +1,16 @@
 using Android.App;
 using Android.Content.PM;
 using Android.OS;
-using Android.Support.V4.Widget;
-using Android.Views;
-
-using The_Boeing_737NG_App.Fragments;
-using Android.Support.V7.App;
-using Android.Support.V4.View;
 using Android.Support.Design.Widget;
-using Unity;
-using The_Boeing_737NG_App.Services;
-using Unity.ServiceLocation;
+using Android.Support.V4.View;
+using Android.Support.V4.Widget;
+using Android.Support.V7.App;
+using Android.Views;
 using CommonServiceLocator;
+using The_Boeing_737NG_App.Fragments;
+using The_Boeing_737NG_App.Services;
+using Unity;
+using Unity.ServiceLocation;
 
 namespace The_Boeing_737NG_App
 {
@@ -31,7 +30,7 @@ namespace The_Boeing_737NG_App
         {
             base.OnCreate(savedInstanceState);
             SetTheme(Resource.Style.Theme_BoeingTheme);
-            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MjM3OTQ3QDMxMzgyZTMxMmUzMGFQZnQ2bEFYcklQNW1YREQxdzdaZ09ReWVLdmZWaFRoeHYrV1YrdkdDSWM9");            
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MjgzODI4QDMxMzgyZTMyMmUzMERQTWZzUWoxbDNBeEhaZVNDcmQyU282MlQ1MzVuU0ZFK0tOWEV0NE9PSjQ9");
             //int uiOptions = (int)Window.DecorView.SystemUiVisibility;
             //uiOptions = (int)SystemUiFlags.HideNavigation | (int)SystemUiFlags.Fullscreen;
             //Window.DecorView.SystemUiVisibility = (StatusBarVisibility)uiOptions;
@@ -105,7 +104,7 @@ namespace The_Boeing_737NG_App
                         break;
                     case Resource.Id.nav_limitations:
                         ListItemClicked(7);
-                        break;                    
+                        break;
                 }
                 e.MenuItem.SetChecked(true);
                 if (lastMenuItem != null && lastMenuItem.ItemId != e.MenuItem.ItemId)
@@ -116,7 +115,7 @@ namespace The_Boeing_737NG_App
                 drawerLayout.CloseDrawers();
             };
 
-            bottomNavigationView.NavigationItemSelected += (sender, e) => 
+            bottomNavigationView.NavigationItemSelected += (sender, e) =>
             {
                 if (e.MenuItem.ItemId == Resource.Id.nav_settings)
                 {

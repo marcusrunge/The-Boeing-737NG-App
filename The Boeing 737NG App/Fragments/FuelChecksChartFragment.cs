@@ -1,10 +1,10 @@
 ﻿using Android.OS;
 using Android.Views;
 using Com.Syncfusion.Charts;
-using The_Boeing_737NG_App.Services;
-using The_Boeing_737NG_App.Models;
-using System.Collections.ObjectModel;
 using CommonServiceLocator;
+using System.Collections.ObjectModel;
+using The_Boeing_737NG_App.Models;
+using The_Boeing_737NG_App.Services;
 
 namespace The_Boeing_737NG_App.Fragments
 {

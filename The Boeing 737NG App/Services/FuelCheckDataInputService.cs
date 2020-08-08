@@ -19,7 +19,7 @@ namespace The_Boeing_737NG_App.Services
             {
                 if (int.TryParse(blockFuel, out int parsedBlockFuel) && int.TryParse(leftEngineFuel, out int parsedLeftEngineFuel) && int.TryParse(rightEngineFuel, out int parsedRightEngineFuel) && int.TryParse(remainingFuel, out int parsedRemainingFuel))
                 {
-                    return (parsedBlockFuel-(parsedRemainingFuel + parsedLeftEngineFuel + parsedRightEngineFuel)).ToString();
+                    return (parsedBlockFuel - (parsedRemainingFuel + parsedLeftEngineFuel + parsedRightEngineFuel)).ToString();
                 }
                 else if (String.IsNullOrEmpty(blockFuel) || String.IsNullOrEmpty(leftEngineFuel) || String.IsNullOrEmpty(rightEngineFuel) || String.IsNullOrEmpty(remainingFuel)) return "";
                 else OnErrorMessageEvent(new ErrorMessageEventArgs("Only Numbers!"));
