@@ -1,12 +1,13 @@
 ﻿using Android.OS;
 using Android.Views;
 using Android.Widget;
+using AndroidX.Fragment.App;
 using CommonServiceLocator;
 using The_Boeing_737NG_App.Services;
 
 namespace The_Boeing_737NG_App.Fragments
 {
-    public class SettingsSettingsFragment : Android.Support.V4.App.Fragment
+    public class SettingsSettingsFragment : Fragment
     {
         ISettingsService _settingsService;
         bool _useImperialMass;

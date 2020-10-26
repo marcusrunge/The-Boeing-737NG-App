@@ -1,12 +1,12 @@
-﻿using Android.App;
-using Android.OS;
+﻿using Android.OS;
 using Android.Views;
 using Android.Widget;
+using AndroidX.Fragment.App;
 using System;
 
 namespace The_Boeing_737NG_App.Fragments
 {
-    public class QuickActionTitlesFragment : Android.Support.V4.App.ListFragment
+    public class QuickActionTitlesFragment : ListFragment
     {
         public static QuickActionTitlesFragment NewInstance() => new QuickActionTitlesFragment { Arguments = new Bundle() };
         public override void OnActivityCreated(Bundle savedInstanceState)

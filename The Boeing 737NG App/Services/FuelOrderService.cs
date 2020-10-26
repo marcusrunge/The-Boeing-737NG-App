@@ -1,16 +1,17 @@
 ﻿using Android.Content;
+using AndroidX.Fragment.App;
 
 namespace The_Boeing_737NG_App.Services
 {
     public interface IFuelOrderService
     {
-        void Send(Android.Support.V4.App.Fragment fragment, string flightNumber, string flightDate, string departure, string destination, string registration, string aircraft, string standOrGate, string captain, string massUnit, string totalFuel, string centerFuel, string wingFuel);
+        void Send(Fragment fragment, string flightNumber, string flightDate, string departure, string destination, string registration, string aircraft, string standOrGate, string captain, string massUnit, string totalFuel, string centerFuel, string wingFuel);
     }
     public class FuelOrderService : IFuelOrderService
     {
         public static FuelOrderService Instance() => new FuelOrderService();
 
-        public void Send(Android.Support.V4.App.Fragment fragment, string flightNumber, string flightDate, string departure, string destination, string registration, string aircraft, string standOrGate, string captain, string massUnit, string totalFuel, string centerFuel, string wingFuel)
+        public void Send(Fragment fragment, string flightNumber, string flightDate, string departure, string destination, string registration, string aircraft, string standOrGate, string captain, string massUnit, string totalFuel, string centerFuel, string wingFuel)
         {
             var emailIntent = new Intent(Intent.ActionSend);
             emailIntent.PutExtra(Intent.ExtraSubject, $"Fuel Order for Flight {flightNumber} on {flightDate} to {destination}");

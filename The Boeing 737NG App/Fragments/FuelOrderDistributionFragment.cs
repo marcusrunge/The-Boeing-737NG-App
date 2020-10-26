@@ -1,14 +1,16 @@
-﻿using Android.App;
+﻿using Android.Content;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
+using AndroidX.AppCompat.App;
+using AndroidX.Fragment.App;
 using CommonServiceLocator;
 using System;
 using The_Boeing_737NG_App.Services;
 
 namespace The_Boeing_737NG_App.Fragments
 {
-    public class FuelOrderDistributionFragment : Android.Support.V4.App.Fragment
+    public class FuelOrderDistributionFragment : Fragment
     {
         IFuelDistributionService _fuelDistributionService;
         ISettingsService _settingsService;
@@ -102,11 +104,11 @@ namespace The_Boeing_737NG_App.Fragments
                 alertDialog.SetTitle("Error");
                 alertDialog.SetIcon(Resource.Drawable.ic_stat_error_outline);
                 alertDialog.SetMessage((e as ErrorMessageEventArgs).ErrorMessage);
-                alertDialog.SetButton("OK", (se, ev) =>
-                {
-                    _totalFuelEditText.Text = "";
-                    _settingsService.SaveSetting("TotalFuel", "");
-                });
+                alertDialog.SetButton((int)DialogButtonType.Positive, "OK", (se, ev) =>
+                 {
+                     _totalFuelEditText.Text = "";
+                     _settingsService.SaveSetting("TotalFuel", "");
+                 });
                 alertDialog.Show();
             };
 

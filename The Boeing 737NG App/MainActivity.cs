@@ -1,12 +1,13 @@
-using Android.App;
 using Android.Content.PM;
 using Android.OS;
-using Android.Support.Design.Widget;
-using Android.Support.V4.View;
-using Android.Support.V4.Widget;
-using Android.Support.V7.App;
 using Android.Views;
+using AndroidX.AppCompat.App;
+using AndroidX.AppCompat.Widget;
+using AndroidX.Core.View;
+using AndroidX.DrawerLayout.Widget;
+using AndroidX.Fragment.App;
 using CommonServiceLocator;
+using Google.Android.Material.Navigation;
 using The_Boeing_737NG_App.Fragments;
 using The_Boeing_737NG_App.Services;
 using Unity;
@@ -14,7 +15,7 @@ using Unity.ServiceLocation;
 
 namespace The_Boeing_737NG_App
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/SplashTheme", MainLauncher = true, LaunchMode = LaunchMode.SingleTop, Icon = "@drawable/ic_launcher", RoundIcon = "@mipmap/ic_launcher", ScreenOrientation = ScreenOrientation.Portrait)]
+    [Android.App.Activity(Label = "@string/app_name", Theme = "@style/SplashTheme", MainLauncher = true, LaunchMode = LaunchMode.SingleTop, Icon = "@drawable/ic_launcher", RoundIcon = "@mipmap/ic_launcher", ScreenOrientation = ScreenOrientation.Portrait)]
     public class MainActivity : AppCompatActivity
     {
         DrawerLayout drawerLayout;
@@ -30,7 +31,7 @@ namespace The_Boeing_737NG_App
         {
             base.OnCreate(savedInstanceState);
             SetTheme(Resource.Style.Theme_BoeingTheme);
-            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MjgzODI4QDMxMzgyZTMyMmUzMERQTWZzUWoxbDNBeEhaZVNDcmQyU282MlQ1MzVuU0ZFK0tOWEV0NE9PSjQ9");
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MzQwMzU3QDMxMzgyZTMzMmUzMFRVeTIvbUJuNE1zR2d5bWR6eHdGdjRqR0F4RE11SHpYd1FhU24vUUhIak09");
             //int uiOptions = (int)Window.DecorView.SystemUiVisibility;
             //uiOptions = (int)SystemUiFlags.HideNavigation | (int)SystemUiFlags.Fullscreen;
             //Window.DecorView.SystemUiVisibility = (StatusBarVisibility)uiOptions;
@@ -51,7 +52,7 @@ namespace The_Boeing_737NG_App
             UnityServiceLocator unityServiceLocator = new UnityServiceLocator(unityContainer);
             ServiceLocator.SetLocatorProvider(() => unityServiceLocator);
             SetContentView(Resource.Layout.main);
-            var toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
             if (toolbar != null)
             {
                 SetSupportActionBar(toolbar);
@@ -147,7 +148,7 @@ namespace The_Boeing_737NG_App
 
             oldPosition = position;
 
-            Android.Support.V4.App.Fragment fragment = null;
+            Fragment fragment = null;
             switch (position)
             {
                 case 0:

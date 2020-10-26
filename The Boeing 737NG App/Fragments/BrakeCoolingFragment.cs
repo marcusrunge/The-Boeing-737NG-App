@@ -1,9 +1,9 @@
 ﻿using Android.Content;
 using Android.OS;
-using Android.Support.Design.Widget;
-using Android.Support.V4.App;
-using Android.Support.V4.View;
 using Android.Views;
+using AndroidX.Fragment.App;
+using AndroidX.ViewPager.Widget;
+using Google.Android.Material.Tabs;
 
 namespace The_Boeing_737NG_App.Fragments
 {

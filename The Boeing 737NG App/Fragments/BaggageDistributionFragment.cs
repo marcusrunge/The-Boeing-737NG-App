@@ -1,13 +1,14 @@
-﻿using Android.App;
+﻿using Android.Content;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
+using AndroidX.Fragment.App;
 using CommonServiceLocator;
 using The_Boeing_737NG_App.Services;
 
 namespace The_Boeing_737NG_App.Fragments
 {
-    public class BaggageDistributionFragment : Android.Support.V4.App.Fragment
+    public class BaggageDistributionFragment : Fragment
     {
         ISettingsService _settingsService;
         IBaggageDistributionService _baggageDistributionService;
@@ -120,12 +121,12 @@ namespace The_Boeing_737NG_App.Fragments
 
             _baggageDistributionService.ErrorMessageEvent += (s, e) =>
             {
-                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(Context);
-                AlertDialog alertDialog = alertDialogBuilder.Create();
+                AndroidX.AppCompat.App.AlertDialog.Builder alertDialogBuilder = new AndroidX.AppCompat.App.AlertDialog.Builder(Context);
+                AndroidX.AppCompat.App.AlertDialog alertDialog = alertDialogBuilder.Create();
                 alertDialog.SetTitle("Error");
                 alertDialog.SetIcon(Resource.Drawable.ic_stat_error_outline);
                 alertDialog.SetMessage((e as ErrorMessageEventArgs).ErrorMessage);
-                alertDialog.SetButton("OK", (sender, eventArgs) => { });
+                alertDialog.SetButton((int)DialogButtonType.Positive, "OK", (sender, eventArgs) => { });
                 alertDialog.Show();
             };
             return view;

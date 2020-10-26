@@ -3,10 +3,11 @@ using Android.Text;
 using Android.Text.Method;
 using Android.Views;
 using Android.Widget;
+using AndroidX.Fragment.App;
 
 namespace The_Boeing_737NG_App.Fragments
 {
-    public class SettingsAboutFragment : Android.Support.V4.App.Fragment
+    public class SettingsAboutFragment : Fragment
     {
         public override void OnCreate(Bundle savedInstanceState)
         {

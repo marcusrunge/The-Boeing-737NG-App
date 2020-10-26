@@ -2,9 +2,10 @@
 using Android.Graphics;
 using Android.Graphics.Drawables;
 using Android.OS;
-using Android.Support.V7.Widget;
 using Android.Views;
 using Android.Widget;
+using AndroidX.Fragment.App;
+using AndroidX.RecyclerView.Widget;
 using CommonServiceLocator;
 using System;
 using System.Collections.Generic;
@@ -13,10 +14,10 @@ using The_Boeing_737NG_App.Services;
 
 namespace The_Boeing_737NG_App.Fragments
 {
-    public class CircuitBreakerFragment : Android.Support.V4.App.Fragment
+    public class CircuitBreakerFragment : Fragment
     {
         ICircuitBreakerService _circuitBreakerService;
-        Android.Widget.SearchView _circuitbreakerSearchView;
+        SearchView _circuitbreakerSearchView;
         RecyclerView _circuitBreakerRecyclerView;
         CircuitBreakerRecyclerViewAdapter _circuitBreakerRecyclerViewAdapter;
         List<CircuitBreaker> _circuitBreakers;

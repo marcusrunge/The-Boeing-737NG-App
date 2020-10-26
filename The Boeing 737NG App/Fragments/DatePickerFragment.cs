@@ -1,12 +1,12 @@
-﻿using Android.App;
-using Android.OS;
+﻿using Android.OS;
 using Android.Util;
 using Android.Widget;
+using AndroidX.Fragment.App;
 using System;
 
 namespace The_Boeing_737NG_App.Fragments
 {
-    public class DatePickerFragment : Android.Support.V4.App.DialogFragment, DatePickerDialog.IOnDateSetListener
+    public class DatePickerFragment : DialogFragment, Android.App.DatePickerDialog.IOnDateSetListener
     {
         // TAG can be any string of your choice.
         public static readonly string TAG = "X:" + typeof(DatePickerFragment).Name.ToUpper();
@@ -23,10 +23,10 @@ namespace The_Boeing_737NG_App.Fragments
             return datePickerFragment;
         }
 
-        public override Dialog OnCreateDialog(Bundle savedInstanceState)
+        public override Android.App.Dialog OnCreateDialog(Bundle savedInstanceState)
         {
             DateTime currently = DateTime.Now;
-            DatePickerDialog dialog = new DatePickerDialog(Activity, this, currently.Year, currently.Month - 1, currently.Day);
+            Android.App.DatePickerDialog dialog = new Android.App.DatePickerDialog(Activity, this, currently.Year, currently.Month - 1, currently.Day);
             return dialog;
         }
 

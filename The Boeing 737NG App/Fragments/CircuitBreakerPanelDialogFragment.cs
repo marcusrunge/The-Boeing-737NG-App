@@ -2,11 +2,13 @@
 using Android.OS;
 using Android.Views;
 using Android.Widget;
+using AndroidX.Core.Content;
+using AndroidX.Fragment.App;
 using System;
 
 namespace The_Boeing_737NG_App.Fragments
 {
-    public class CircuitBreakerPanelDialogFragment : Android.Support.V4.App.DialogFragment
+    public class CircuitBreakerPanelDialogFragment : DialogFragment
     {
         CircuitBreakerFragment.Panel _panel;
         string _location;
@@ -79,7 +81,7 @@ namespace The_Boeing_737NG_App.Fragments
                         };
                         GridLayout.LayoutParams rowLetterLayoutParams = new GridLayout.LayoutParams() { ColumnSpec = GridLayout.InvokeSpec(0), RowSpec = GridLayout.InvokeSpec(i) };
                         rowLetterLayoutParams.SetGravity(GravityFlags.Center);
-                        rowLetter.SetTextColor(new Color(Android.Support.V4.Content.ContextCompat.GetColor(Context, Resource.Color.blueGrey100)));
+                        rowLetter.SetTextColor(new Color(ContextCompat.GetColor(Context, Resource.Color.blueGrey100)));
                         rowLetterLayoutParams.Height = (s as View).Height;
                         rowLetter.SetTextSize(Android.Util.ComplexUnitType.Sp, 14);
                         rowLetter.LayoutParameters = rowLetterLayoutParams;

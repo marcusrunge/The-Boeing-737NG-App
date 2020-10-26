@@ -1,9 +1,10 @@
 ﻿using Android.OS;
 using Android.Views;
+using AndroidX.Fragment.App;
 
 namespace The_Boeing_737NG_App.Fragments
 {
-    public class SettingsDisclaimerFragment : Android.Support.V4.App.Fragment
+    public class SettingsDisclaimerFragment : Fragment
     {
         public override void OnCreate(Bundle savedInstanceState)
         {

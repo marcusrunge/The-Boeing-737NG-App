@@ -1,13 +1,14 @@
 ﻿using Android.OS;
 using Android.Views;
 using Android.Widget;
+using AndroidX.Fragment.App;
 using CommonServiceLocator;
 using System;
 using The_Boeing_737NG_App.Services;
 
 namespace The_Boeing_737NG_App.Fragments
 {
-    public class FuelOrderOrderFragment : Android.Support.V4.App.Fragment
+    public class FuelOrderOrderFragment : Fragment
     {
         // TAG can be any string of your choice.
         public static readonly string TAG = "X:" + typeof(FuelOrderOrderFragment).Name.ToUpper();

@@ -1,14 +1,16 @@
-﻿using Android.App;
+﻿using Android.Content;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
+using AndroidX.AppCompat.App;
+using AndroidX.Fragment.App;
 using CommonServiceLocator;
 using System;
 using The_Boeing_737NG_App.Services;
 
 namespace The_Boeing_737NG_App.Fragments
 {
-    public class FuelOrderUpliftFragment : Android.Support.V4.App.Fragment
+    public class FuelOrderUpliftFragment : Fragment
     {
         IFuelUpliftService _fuelUpliftService;
         ISettingsService _settingsService;
@@ -106,7 +108,7 @@ namespace The_Boeing_737NG_App.Fragments
                 alertDialog.SetTitle("Error");
                 alertDialog.SetIcon(Resource.Drawable.ic_stat_error_outline);
                 alertDialog.SetMessage("Numbers Only");
-                alertDialog.SetButton("OK", (se, ev) => { });
+                alertDialog.SetButton((int)DialogButtonType.Positive, "OK", (se, ev) => { });
                 alertDialog.Show();
                 return;
             };

@@ -1,13 +1,14 @@
 ﻿using Android.OS;
-using Android.Support.V7.Widget;
 using Android.Views;
 using Android.Widget;
+using AndroidX.AppCompat.Widget;
+using AndroidX.Fragment.App;
 using CommonServiceLocator;
 using The_Boeing_737NG_App.Services;
 
 namespace The_Boeing_737NG_App.Fragments
 {
-    public class BrakeCoolingIndicationalFragment : Android.Support.V4.App.Fragment
+    public class BrakeCoolingIndicationalFragment : Fragment
     {
         ISettingsService _settingsService;
         IBrakeCoolingService _brakeCoolingService;

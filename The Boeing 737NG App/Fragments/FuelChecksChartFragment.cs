@@ -1,5 +1,6 @@
 ﻿using Android.OS;
 using Android.Views;
+using AndroidX.Fragment.App;
 using Com.Syncfusion.Charts;
 using CommonServiceLocator;
 using System.Collections.ObjectModel;
@@ -8,7 +9,7 @@ using The_Boeing_737NG_App.Services;
 
 namespace The_Boeing_737NG_App.Fragments
 {
-    public class FuelChecksChartFragment : Android.Support.V4.App.Fragment
+    public class FuelChecksChartFragment : Fragment
     {
         ISettingsService _settingsService;
         IDatabaseService _databaseService;

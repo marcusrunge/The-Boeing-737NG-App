@@ -1,12 +1,12 @@
-﻿using Android.App;
-using Android.OS;
+﻿using Android.OS;
 using Android.Views;
 using Android.Widget;
+using AndroidX.Fragment.App;
 using System;
 
 namespace The_Boeing_737NG_App.Fragments
 {
-    public class ManouversTitlesFragment : Android.Support.V4.App.ListFragment
+    public class ManouversTitlesFragment : ListFragment
     {
         public override void OnActivityCreated(Bundle savedInstanceState)
         {

@@ -1,7 +1,6 @@
-﻿
-using Android.OS;
-using Android.Support.V4.App;
+﻿using Android.OS;
 using Android.Views;
+using AndroidX.Fragment.App;
 
 namespace The_Boeing_737NG_App.Fragments
 {

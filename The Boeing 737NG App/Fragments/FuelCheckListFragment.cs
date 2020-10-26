@@ -1,8 +1,9 @@
 ﻿using Android.Graphics;
 using Android.OS;
-using Android.Support.V7.Widget;
 using Android.Views;
 using Android.Widget;
+using AndroidX.Fragment.App;
+using AndroidX.RecyclerView.Widget;
 using CommonServiceLocator;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ using The_Boeing_737NG_App.Services;
 
 namespace The_Boeing_737NG_App.Fragments
 {
-    public class FuelCheckListFragment : Android.Support.V4.App.Fragment, ActionMode.ICallback
+    public class FuelCheckListFragment : Fragment, ActionMode.ICallback
     {
         IFuelCheckListService _fuelCheckListService;
         ISettingsService _settingsService;
